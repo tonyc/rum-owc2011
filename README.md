@@ -1,19 +1,18 @@
-== Prerequisites 
+Prerequisites
+=============
 
-1. rvm (http://rvm.beginrescueend.com/)
-
-2. homebrew (https://github.com/mxcl/homebrew)
-
-3. postgresql (installed from brew: <tt>brew install postgresql<tt>)
-
-4. Make sure postgres is running. Follow the instructions after you install postgresql, or use this handy alias for starting/stopping postgres:
+* rvm (http://rvm.beginrescueend.com/)
+* homebrew (https://github.com/mxcl/homebrew)
+* postgresql (installed from brew: <tt>brew install postgresql<tt>)
+* Make sure postgres is running. Follow the instructions after you install postgresql, or use this handy alias for starting/stopping postgres:
 
 <pre>
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/pg.log start'
 alias stoppostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/pg.log stop'
 </pre>
 
-== Create the postgresql user and databases:
+Create the postgresql user and databases
+========================================
 
 <pre>
 $ createuser owc
@@ -28,15 +27,12 @@ $ createdb -U owc owc_test
 * <code>cp config/database.yml.postgresql config/database.yml</code>
 * Edit this file, leave the password field blank and change "user" to "owc"
 
-== Gems/etc
+Gems/etc
+========
 
-1. Make sure you have a separate gemset created, and make sure bundler and rake 
-are included. This can be either directly in the gemset, or in your "global" gemset
-
-2. <code>bundle install</code>
-
-3. <code>rake db:migrate</code>
-
-4. <code>rake db:seed</code> (optional) 
+* Make sure you have a separate gemset created, and make sure bundler and rake are included. This can be either directly in the gemset, or in your "global" gemset
+* <code>bundle install</code>
+* <code>rake db:migrate</code>
+* <code>rake db:seed</code> (optional) 
 
 At this point you should be able to do "rails server" from the project directory and run.
