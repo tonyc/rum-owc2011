@@ -75,3 +75,6 @@ capybara-*html
 .rvmrc
 .rvmrc.*
 
+#database.yml stuff
+config/database.yml
+
