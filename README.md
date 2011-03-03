@@ -8,14 +8,14 @@
 
 4. Make sure postgres is running. Follow the instructions after you install postgresql, or use this handy alias for starting/stopping postgres:
 
-<tt>
+<pre>
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/pg.log start'
 alias stoppostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/pg.log stop'
-</tt>
+</pre>
 
 == Create the postgresql user and databases:
 
-<tt>
+<pre>
 $ createuser owc
 Shall the new role be a superuser? (y/n) n
 Shall the new role be allowed to create databases? (y/n) y
@@ -23,9 +23,9 @@ Shall the new role be allowed to create more new roles? (y/n) n
 
 $ createdb -U owc owc_development
 $ createdb -U owc owc_test
-</tt>
+</pre>
 
-* <tt>cp config/database.yml.postgresql config/database.yml</tt>
+* <code>cp config/database.yml.postgresql config/database.yml</code>
 * Edit this file, leave the password field blank and change "user" to "owc"
 
 == Gems/etc
@@ -33,10 +33,10 @@ $ createdb -U owc owc_test
 1. Make sure you have a separate gemset created, and make sure bundler and rake 
 are included. This can be either directly in the gemset, or in your "global" gemset
 
-2. <tt>bundle install</tt>
+2. <code>bundle install</code>
 
-3. <tt>rake db:migrate</tt>
+3. <code>rake db:migrate</code>
 
-4. <tt>rake db:seed</tt> (optional) 
+4. <code>rake db:seed</code> (optional) 
 
 At this point you should be able to do "rails server" from the project directory and run.
