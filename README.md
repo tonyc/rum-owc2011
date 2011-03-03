@@ -4,7 +4,7 @@ Prerequisites
 * rvm (http://rvm.beginrescueend.com/)
 * homebrew (https://github.com/mxcl/homebrew)
 * postgresql (installed from brew: <tt>brew install postgresql<tt>)
-* Make sure postgres is running. Follow the instructions after you install postgresql, or use this handy alias for starting/stopping postgres:
+* Make sure postgres is running. Follow the instructions after you install postgresql, or use these handy aliases for starting/stopping postgres:
 
 <pre>
 alias startpostgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/pg.log start'
