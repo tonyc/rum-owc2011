@@ -3,7 +3,7 @@ Prerequisites
 
 * rvm (http://rvm.beginrescueend.com/)
 * homebrew (https://github.com/mxcl/homebrew)
-* postgresql (installed from brew: <tt>brew install postgresql<tt>)
+* postgresql (installed from brew: <code>brew install postgresql<code>)
 * Make sure postgres is running. Follow the instructions after you install postgresql, or use these handy aliases for starting/stopping postgres:
 
 <pre>
