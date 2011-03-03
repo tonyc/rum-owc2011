@@ -25,7 +25,7 @@ $ createdb -U owc owc_development
 $ createdb -U owc owc_test
 </tt>
 
-* <tt>cp config/database.yml.postgresql config/datatbase.yml</tt>
+* <tt>cp config/database.yml.postgresql config/database.yml</tt>
 * Edit this file, leave the password field blank and change "user" to "owc"
 
 == Gems/etc
