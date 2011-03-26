@@ -26,6 +26,7 @@ group :test do
 end
 
 gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master' 
+gem 'refinerycms-theming', '=1.0.0'
 # gem 'sqlite3'
 gem 'pg'
 gem "compass", ">= 0.10.6"
