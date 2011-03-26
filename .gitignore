@@ -82,3 +82,7 @@ capybara-*html
 #database.yml stuff
 config/database.yml
 
+#emacs stuff
+.#*
+
+MasterContactList.csv
