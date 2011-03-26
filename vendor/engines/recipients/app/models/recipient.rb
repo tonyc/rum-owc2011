@@ -1,5 +1,6 @@
 class Recipient < ActiveRecord::Base
-
+  scope :isactive, where('active = ?', true)
+  
   acts_as_indexed :fields => [:name, :story, :year]
 
   validates :name, :presence => true, :uniqueness => true
