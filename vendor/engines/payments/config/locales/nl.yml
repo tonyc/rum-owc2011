@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    payments:
+      title: Payments
+  admin:
+    payments:
+      index:
+        title: Payments
+        create_new: Maak een nieuwe Payment
+        reorder: Wijzig de volgorde van de Payments
+        reorder_done: Klaar met het wijzingen van de volgorde van de Payments
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Payments. Druk op 'Maak een nieuwe Payment' om de eerste aan te maken.
+      payment:
+        view_live_html: Bekijk deze payment op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze payment
+        delete: Verwijder deze payment voor eeuwig
+  payments:
+    show:
+      other: Andere Payments

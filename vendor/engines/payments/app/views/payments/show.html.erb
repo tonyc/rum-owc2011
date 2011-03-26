@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @payment.transaction_id %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Amount</h1>
+    <p>
+      <%=raw @payment.amount %>
+    </p>
+  </section>
+  <section>
+    <h1>Recipient</h1>
+    <p>
+      <%=raw @payment.recipient_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Transaction</h1>
+    <p>
+      <%=raw @payment.transaction_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="payments">
+      <% @payments.each do |payment| %>
+        <li>
+          <%= link_to payment.transaction_id, payment_url(payment) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
