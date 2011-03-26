@@ -12,6 +12,24 @@
 
 ActiveRecord::Schema.define(:version => 20110326184938) do
 
+  create_table "contacts", :force => true do |t|
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "company"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "donation_tags", :force => true do |t|
+    t.integer "contact_id"
+    t.integer "year"
+  end
+
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -49,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20110326184938) do
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
     t.string   "locale"
+    t.string   "browser_title"
     t.string   "meta_keywords"
     t.text     "meta_description"
     t.string   "title"
