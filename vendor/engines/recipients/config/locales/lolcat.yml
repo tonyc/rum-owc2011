@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    recipients:
+      title: Recipients
+  admin:
+    recipients:
+      index:
+        title: Recipients
+        create_new: CREATE NEW Recipient
+        reorder: REORDR Recipients
+        reorder_done: DUN REORDERIN Recipients
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Recipients YET. CLICK "CREATE NEW Recipient" 2 ADD UR FURST recipient.
+      recipient:
+        view_live_html: VIEW DIS recipient LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS recipient
+        delete: REMOOV DIS recipient FOREVR
+  recipients:
+    show:
+      other: OTHR Recipients
