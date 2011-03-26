@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    recipients:
+      title: Recipients
+  admin:
+    recipients:
+      index:
+        title: Recipients
+        create_new: Maak een nieuwe Recipient
+        reorder: Wijzig de volgorde van de Recipients
+        reorder_done: Klaar met het wijzingen van de volgorde van de Recipients
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Recipients. Druk op 'Maak een nieuwe Recipient' om de eerste aan te maken.
+      recipient:
+        view_live_html: Bekijk deze recipient op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze recipient
+        delete: Verwijder deze recipient voor eeuwig
+  recipients:
+    show:
+      other: Andere Recipients

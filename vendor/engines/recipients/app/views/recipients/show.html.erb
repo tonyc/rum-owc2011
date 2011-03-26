@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @recipient.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @recipient.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Story</h1>
+    <p>
+      <%=raw @recipient.story %>
+    </p>
+  </section>
+  <section>
+    <h1>Year</h1>
+    <p>
+      <%=raw @recipient.year %>
+    </p>
+  </section>
+  <section>
+    <h1>Image</h1>
+    <p>
+      <%= image_fu @recipient.image, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Amount Needed</h1>
+    <p>
+      <%=raw @recipient.amount_needed %>
+    </p>
+  </section>
+  <section>
+    <h1>Amount Received</h1>
+    <p>
+      <%=raw @recipient.amount_received %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="recipients">
+      <% @recipients.each do |recipient| %>
+        <li>
+          <%= link_to recipient.name, recipient_url(recipient) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
