@@ -59,10 +59,5 @@ gem 'aws-s3'
 #   gem 'webrat'
 # end
 
-<<<<<<< HEAD
-gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
-=======
 gem 'refinerycms-recipients', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
-
->>>>>>> origin/master
