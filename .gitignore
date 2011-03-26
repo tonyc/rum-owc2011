@@ -13,7 +13,6 @@ tmp/**/*
 # Documentation
 doc/api
 doc/app
-doc/*
 .yardoc
 .yardopts
 
@@ -24,6 +23,9 @@ public/themes/*
 # Public Cache
 public/javascripts/cache
 public/stylesheets/cache
+
+# Compass/Sass gernerated stylesheets
+public/stylesheets/compiled
 
 # Vendor Cache
 vendor/cache
