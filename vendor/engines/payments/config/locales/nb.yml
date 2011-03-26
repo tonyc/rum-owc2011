@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    payments:
+      title: Payments
+  admin:
+    payments:
+      index:
+        title: Payments
+        create_new: Lag en ny Payment
+        reorder: Endre rekkefølgen på Payments
+        reorder_done: Ferdig å endre rekkefølgen Payments
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Payments enda. Klikk på "Lag en ny Payment" for å legge til din første payment.
+      payment:
+        view_live_html: Vis hvordan denne payment ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne payment
+        delete: Fjern denne payment permanent
+  payments:
+    show:
+      other: Andre Payments

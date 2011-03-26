@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    payments:
+      title: Payments
+  admin:
+    payments:
+      index:
+        title: Payments
+        create_new: Add New Payment
+        reorder: Reorder Payments
+        reorder_done: Done Reordering Payments
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Payments yet. Click "Add New Payment" to add your first payment.
+      payment:
+        view_live_html: View this payment live <br/><em>(opens in a new window)</em>
+        edit: Edit this payment
+        delete: Remove this payment forever
+  payments:
+    show:
+      other: Other Payments
