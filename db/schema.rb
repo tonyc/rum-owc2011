@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326184938) do
+ActiveRecord::Schema.define(:version => 20110326204438) do
 
   create_table "campaigns", :force => true do |t|
     t.string   "name"
@@ -82,10 +82,9 @@ ActiveRecord::Schema.define(:version => 20110326184938) do
     t.integer  "page_id"
     t.string   "locale"
     t.string   "meta_keywords"
-    t.string   "browser_title"
     t.text     "meta_description"
-    t.string   "title"
     t.string   "browser_title"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -130,9 +129,22 @@ ActiveRecord::Schema.define(:version => 20110326184938) do
     t.datetime "updated_at"
   end
 
-
   add_index "payments", ["id"], :name => "index_payments_on_id"
 
+  create_table "recipients", :force => true do |t|
+    t.string   "name"
+    t.text     "story"
+    t.string   "year"
+    t.integer  "image_id"
+    t.integer  "amount_needed"
+    t.integer  "amount_received"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "active"
+  end
+
+  add_index "recipients", ["id"], :name => "index_recipients_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"
