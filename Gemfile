@@ -9,6 +9,7 @@ gem 'rails', '3.0.5'
 gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master' 
 # gem 'sqlite3'
 gem 'pg'
+gem "compass", ">= 0.10.6"
 
 # Use unicorn as the web server
 # gem 'unicorn'
