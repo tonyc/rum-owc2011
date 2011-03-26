@@ -12,6 +12,38 @@
 
 ActiveRecord::Schema.define(:version => 20110326184938) do
 
+  create_table "campaigns", :force => true do |t|
+    t.string   "name"
+    t.float    "target_level"
+    t.float    "current_level"
+    t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "campaigns_contacts", :id => false, :force => true do |t|
+    t.integer "campaign_id"
+    t.integer "contact_id"
+  end
+
+  create_table "contacts", :force => true do |t|
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "company"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "donation_tags", :force => true do |t|
+    t.integer "contact_id"
+    t.integer "year"
+  end
+
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -50,6 +82,7 @@ ActiveRecord::Schema.define(:version => 20110326184938) do
     t.integer  "page_id"
     t.string   "locale"
     t.string   "meta_keywords"
+    t.string   "browser_title"
     t.text     "meta_description"
     t.string   "title"
     t.string   "browser_title"
