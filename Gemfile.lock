@@ -83,6 +83,8 @@ GEM
     babosa (0.2.2)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     capybara (0.4.0)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -126,6 +128,7 @@ GEM
     globalize3 (0.1.0.beta)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
+    haml (3.0.25)
     i18n (0.5.0)
     json (1.4.6)
     json_pure (1.4.6)
@@ -206,6 +209,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass (= 0.10.6)
   aws-s3
   capybara (~> 0.4.0)
   cucumber

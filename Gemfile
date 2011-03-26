@@ -23,13 +23,12 @@ group :test do
   gem 'timecop', '~>0.3.5'
   gem "shoulda"
   gem "launchy"
-  
-  
 end
 
 gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master' 
 # gem 'sqlite3'
 gem 'pg'
+gem "compass", ">= 0.10.6"
 gem 'aws-s3'
 
 # Use unicorn as the web server
