@@ -1,7 +1,6 @@
 class CreateContacts < ActiveRecord::Migration
   def self.up
     create_table :contacts do |t|
-      t.integer :id
       t.string  :last_name
       t.string  :first_name
       t.string  :company
@@ -20,6 +19,7 @@ class CreateContacts < ActiveRecord::Migration
   end
 
   def self.down
+    drop_table :donation_tags
     drop_table :contacts
   end
 end
