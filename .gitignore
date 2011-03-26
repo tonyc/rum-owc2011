@@ -24,10 +24,6 @@ public/themes/*
 public/javascripts/cache
 public/stylesheets/cache
 
-# Compass/Sass gernerated stylesheets
-public/stylesheets/compiled
-themes/*/stylesheets/*.css
-
 # Vendor Cache
 vendor/cache
 
