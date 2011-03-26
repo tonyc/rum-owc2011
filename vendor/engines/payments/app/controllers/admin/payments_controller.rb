@@ -11,5 +11,9 @@ module Admin
       render :partial => 'payments' if request.xhr?
     end
 
+    def new
+      @payment = Payment.new
+      @recipients = Recipient.isactive
+    end
   end
 end
