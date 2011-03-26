@@ -54,3 +54,5 @@ gem 'aws-s3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
