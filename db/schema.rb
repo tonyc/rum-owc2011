@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326185847) do
+ActiveRecord::Schema.define(:version => 20110326184938) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -97,7 +97,9 @@ ActiveRecord::Schema.define(:version => 20110326185847) do
     t.datetime "updated_at"
   end
 
+
   add_index "payments", ["id"], :name => "index_payments_on_id"
+
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"
