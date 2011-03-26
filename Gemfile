@@ -5,11 +5,31 @@ gem 'rails', '3.0.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem "nokogiri", '~>1.4.0'
+group :test do
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'spork'
+  gem 'launchy'
+
+  gem 'machinist', '>= 2.0.0.beta1'
+  gem 'faker'
+  gem 'capybara', '~>0.4.0'
+
+  gem 'email_spec', '~>0.6.2', :require => nil
+  gem 'timecop', '~>0.3.5'
+  gem "shoulda"
+  gem "launchy"
+end
 
 gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master' 
 # gem 'sqlite3'
 gem 'pg'
 gem "compass", ">= 0.10.6"
+gem 'aws-s3'
 
 # Use unicorn as the web server
 # gem 'unicorn'

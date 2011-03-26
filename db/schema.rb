@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(:version => 20110303163746) do
     t.string   "locale"
     t.string   "meta_keywords"
     t.text     "meta_description"
-    t.string   "title"
     t.string   "browser_title"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
