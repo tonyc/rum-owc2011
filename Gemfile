@@ -6,6 +6,9 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "nokogiri", '~>1.4.0'
+gem 'heroku'
+gem 'taps', '>= 0.3.20'
+
 group :test do
   gem 'database_cleaner'
   gem 'cucumber-rails'
@@ -25,6 +28,7 @@ group :test do
   gem "launchy"
 end
 
+gem 'xml-simple'
 gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master' 
 gem 'refinerycms-theming', '=1.0.0'
 # gem 'sqlite3'
@@ -55,4 +59,10 @@ gem 'aws-s3'
 #   gem 'webrat'
 # end
 
+<<<<<<< HEAD
 gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
+=======
+gem 'refinerycms-recipients', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
+
+>>>>>>> origin/master
