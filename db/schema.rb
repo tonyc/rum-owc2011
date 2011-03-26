@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110303163746) do
+ActiveRecord::Schema.define(:version => 20110326185847) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -87,6 +87,17 @@ ActiveRecord::Schema.define(:version => 20110303163746) do
   add_index "pages", ["lft"], :name => "index_pages_on_lft"
   add_index "pages", ["parent_id"], :name => "index_pages_on_parent_id"
   add_index "pages", ["rgt"], :name => "index_pages_on_rgt"
+
+  create_table "payments", :force => true do |t|
+    t.float    "amount"
+    t.integer  "recipient_id"
+    t.string   "transaction_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "payments", ["id"], :name => "index_payments_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"

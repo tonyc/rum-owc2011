@@ -44,6 +44,11 @@ GIT
     refinerycms-settings (0.9.9.4)
       refinerycms-base (~> 0.9.9.4)
 
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-payments (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -83,8 +88,6 @@ GEM
     babosa (0.2.2)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
-    compass (0.10.6)
-      haml (>= 3.0.4)
     capybara (0.4.0)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -97,6 +100,8 @@ GEM
     celerity (0.8.6)
     childprocess (0.1.6)
       ffi (~> 0.6.3)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     configuration (1.2.0)
     cucumber (0.10.0)
       builder (>= 2.1.2)
@@ -209,9 +214,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (= 0.10.6)
   aws-s3
   capybara (~> 0.4.0)
+  compass (>= 0.10.6)
   cucumber
   cucumber-rails
   database_cleaner
@@ -223,6 +228,7 @@ DEPENDENCIES
   pg
   rails (= 3.0.5)
   refinerycms!
+  refinerycms-payments (= 1.0)!
   rspec
   rspec-rails
   shoulda
