@@ -44,6 +44,11 @@ GIT
     refinerycms-settings (0.9.9.4)
       refinerycms-base (~> 0.9.9.4)
 
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-payments (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -226,6 +231,7 @@ DEPENDENCIES
   rails (= 3.0.5)
   refinerycms!
   refinerycms-theming (= 1.0.0)
+  refinerycms-payments (= 1.0)!
   rspec
   rspec-rails
   shoulda

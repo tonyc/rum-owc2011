@@ -1,0 +1,6 @@
+[remote "heroku"]
+	url = git@heroku.com:mobility.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
+[remote "staging"]
+	url = git@heroku.com:mobility-staging.git
+	fetch = +refs/heads/*:refs/remotes/staging/*
