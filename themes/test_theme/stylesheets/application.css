@@ -7,6 +7,8 @@
   display: block;
   font-size: 15px;
   padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #95c659), color-stop(100%, #678041));
   background-image: -moz-linear-gradient(top, #95c659 0%, #678041 100%);
   background-image: linear-gradient(top, #95c659 0%, #678041 100%);
@@ -22,15 +24,21 @@
   -o-box-shadow: #666666 1px 1px 3px 0;
   box-shadow: #666666 1px 1px 3px 0;
 }
-/* line 13, sass/_button.scss */
+/* line 15, sass/_button.scss */
 .button:hover {
   background: #000;
 }
-/* line 17, sass/_button.scss */
+/* line 19, sass/_button.scss */
 .button:active {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #000000), color-stop(100%, #4d4d4d));
   background-image: -moz-linear-gradient(top, #000000 0%, #4d4d4d 100%);
   background-image: linear-gradient(top, #000000 0%, #4d4d4d 100%);
+}
+
+/* line 24, sass/_button.scss */
+a.button {
+  float: right;
+  padding: 7px 10px;
 }
 
 /* line 1, sass/_donate_runner.scss */
@@ -189,13 +197,17 @@
   padding: 0px 10px;
 }
 
-/* line 3, sass/_footer.scss */
+/* line 1, sass/_footer.scss */
+#footer {
+  margin-bottom: 20px;
+}
+/* line 4, sass/_footer.scss */
 #footer .footer-top {
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: hidden;
 }
-/* line 8, sass/_footer.scss */
+/* line 9, sass/_footer.scss */
 #footer .footer-top .newsletter {
   background: #e9e8ea;
   float: left;
@@ -209,11 +221,11 @@
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 16, sass/_footer.scss */
+/* line 17, sass/_footer.scss */
 #footer .footer-top .newsletter form {
   overflow: hidden;
 }
-/* line 19, sass/_footer.scss */
+/* line 20, sass/_footer.scss */
 #footer .footer-top .newsletter form label {
   display: block;
   float: left;
@@ -223,13 +235,13 @@
   position: relative;
   top: 5px;
 }
-/* line 29, sass/_footer.scss */
+/* line 30, sass/_footer.scss */
 #footer .footer-top .newsletter form input {
   display: block;
   float: left;
   margin-bottom: 5px;
 }
-/* line 35, sass/_footer.scss */
+/* line 36, sass/_footer.scss */
 #footer .footer-top .newsletter form input[type=text] {
   font-size: 15px;
   height: 24px;
@@ -238,7 +250,7 @@
   top: 2px;
   width: 269px;
 }
-/* line 46, sass/_footer.scss */
+/* line 47, sass/_footer.scss */
 #footer .footer-top .shop {
   background: #e9e8ea;
   float: right;
@@ -253,7 +265,7 @@
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 55, sass/_footer.scss */
+/* line 56, sass/_footer.scss */
 #footer .footer-top .shop a {
   background: url(/images/shop-btn.png) 0 0 no-repeat;
   color: transparent;
@@ -264,15 +276,15 @@
   top: -8px;
   width: 184px;
 }
-/* line 65, sass/_footer.scss */
+/* line 66, sass/_footer.scss */
 #footer .footer-top .shop a:hover {
   background-position: -368px 0;
 }
-/* line 69, sass/_footer.scss */
+/* line 70, sass/_footer.scss */
 #footer .footer-top .shop a:active {
   background-position: -184px 0;
 }
-/* line 74, sass/_footer.scss */
+/* line 75, sass/_footer.scss */
 #footer .footer-top .shop .detail {
   background: url(/images/shop-brackets.png) 0 0 no-repeat;
   display: block;
@@ -282,12 +294,12 @@
   top: -8px;
   width: 185px;
 }
-/* line 83, sass/_footer.scss */
+/* line 84, sass/_footer.scss */
 #footer .footer-top .shop .detail span {
   display: block;
-  margin: 11px 17px 0 17px;
+  margin: 11px 17px 0 20px;
 }
-/* line 91, sass/_footer.scss */
+/* line 92, sass/_footer.scss */
 #footer .footer-bottom {
   background: #3f3f3f;
   clear: both;
@@ -301,27 +313,27 @@
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 99, sass/_footer.scss */
+/* line 100, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links {
   float: right;
   width: 500px;
   text-align: right;
 }
-/* line 104, sass/_footer.scss */
+/* line 105, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li {
   display: inline;
 }
-/* line 106, sass/_footer.scss */
+/* line 107, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li a {
   color: #e9e8ea;
   text-decoration: none;
 }
-/* line 110, sass/_footer.scss */
+/* line 111, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li a:after {
   content: "|";
   padding: 10px;
 }
-/* line 116, sass/_footer.scss */
+/* line 117, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li:last-child a:after {
   content: "";
   padding: 0;
