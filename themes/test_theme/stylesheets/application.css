@@ -1,4 +1,38 @@
 @charset "UTF-8";
+/* line 1, sass/_button.scss */
+.button {
+  background: #95c659;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  padding: 5px 10px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #95c659), color-stop(100%, #678041));
+  background-image: -moz-linear-gradient(top, #95c659 0%, #678041 100%);
+  background-image: linear-gradient(top, #95c659 0%, #678041 100%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  -moz-box-shadow: #666666 1px 1px 3px 0;
+  -webkit-box-shadow: #666666 1px 1px 3px 0;
+  -o-box-shadow: #666666 1px 1px 3px 0;
+  box-shadow: #666666 1px 1px 3px 0;
+}
+/* line 13, sass/_button.scss */
+.button:hover {
+  background: #000;
+}
+/* line 17, sass/_button.scss */
+.button:active {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #000000), color-stop(100%, #4d4d4d));
+  background-image: -moz-linear-gradient(top, #000000 0%, #4d4d4d 100%);
+  background-image: linear-gradient(top, #000000 0%, #4d4d4d 100%);
+}
+
 /* line 1, sass/_donate_runner.scss */
 .donate-runner {
   background: url(/images/runner-bkgd.png) 0 0 repeat-x;
@@ -148,4 +182,117 @@
   background-color: #000000;
   color: #FFFFFF;
   padding: 0px 10px;
+}
+
+/* line 3, sass/_footer.scss */
+#footer .footer-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+/* line 8, sass/_footer.scss */
+#footer .footer-top .newsletter {
+  background: #e9e8ea;
+  float: left;
+  height: 52px;
+  padding: 20px 0 0 30px;
+  width: 556px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 16, sass/_footer.scss */
+#footer .footer-top .newsletter form {
+  overflow: hidden;
+}
+/* line 19, sass/_footer.scss */
+#footer .footer-top .newsletter form label {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+/* line 29, sass/_footer.scss */
+#footer .footer-top .newsletter form input {
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+}
+/* line 35, sass/_footer.scss */
+#footer .footer-top .newsletter form input[type=text] {
+  font-size: 15px;
+  height: 24px;
+  position: relative;
+  margin-right: 5px;
+  top: 2px;
+  width: 269px;
+}
+/* line 46, sass/_footer.scss */
+#footer .footer-top .shop {
+  background: #e9e8ea;
+  float: right;
+  height: 52px;
+  padding: 20px 0 0 30px;
+  position: relative;
+  width: 364px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 55, sass/_footer.scss */
+#footer .footer-top .shop a {
+  background: url(/images/shop-btn.png) 0 0 no-repeat;
+  color: transparent;
+  display: block;
+  height: 77px;
+  left: -10px;
+  position: absolute;
+  top: -8px;
+  width: 184px;
+}
+/* line 65, sass/_footer.scss */
+#footer .footer-top .shop a:hover {
+  background-position: -368px 0;
+}
+/* line 69, sass/_footer.scss */
+#footer .footer-top .shop a:active {
+  background-position: -184px 0;
+}
+/* line 74, sass/_footer.scss */
+#footer .footer-top .shop .detail {
+  background: url(/images/shop-brackets.png) 0 0 no-repeat;
+  display: block;
+  float: right;
+  height: 77px;
+  position: relative;
+  top: -8px;
+  width: 214px;
+}
+/* line 83, sass/_footer.scss */
+#footer .footer-top .shop .detail span {
+  display: block;
+  margin: 11px 17px 0 17px;
+}
+/* line 91, sass/_footer.scss */
+#footer .footer-bottom {
+  background: #3f3f3f;
+  clear: both;
+  color: #e9e8ea;
+  font-size: 13px;
+  padding: 10px 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
 }

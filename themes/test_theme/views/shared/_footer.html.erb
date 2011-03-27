@@ -1,10 +1,27 @@
-<p>
+<div class="footer-top">
+  <div class="newsletter">
+    <form action="#">
+      <label for="newsletter-signup">Newsletter Signup</label>
+      <input type="text" name="newsletter-signup" />
+      <input class="button" type="submit" value="Signup" />
+    </form>
+
+  </div>
+  <div class="shop">
+    <%= link_to "Shop", "#" %>
+    <div class="detail">
+      <span>Crave Gift Card 50% Off A Grand Slam at Denny's</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer-bottom">
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
-</p>
 
-<ol id="footer-links">
+<ol class="footer-links">
   <%= render :partial => "shared/footer_link", :collection => top_level_pages_without_home %>
 </ol>
 
+</div>
 <%= render :partial => 'shared/javascripts' %>
