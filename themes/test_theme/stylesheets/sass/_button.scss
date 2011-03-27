@@ -1,27 +1,28 @@
 .button {
-  background: #95c659;
+  background: url(/images/btn.png) 0 0 repeat-x;
   border: none;
   color: #fff;
   display: block;
   font-size: 15px;
-  padding: 5px 10px;
+  height: 30px;
+  padding: 0 10px 0;
   text-align: center;
   text-decoration: none;
-  @include linear-gradient(color-stops(#95c659, #678041));
   @include border-radius();
   @include text-shadow();
   @include box-shadow(#666, 1px, 1px, 3px);
 
   &:hover {
-    background: #000;
+    background-position: 0 (-30px * 2);
   }
   
   &:active {
-    @include linear-gradient(color-stops(#000, lighten(#000, 30%)));
+    background-position: 0 (-30px * 1);
   }
 }
 
 a.button {
   float: right;
-  padding: 7px 10px;
+  height: 23px;
+  padding-top: 7px;
 }
