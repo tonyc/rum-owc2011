@@ -25,10 +25,13 @@
       <%=raw @campaign.year %>
     </p>
   </section>
-
+  
+  <% if @campaign.images.present? %>
   <div id="coin-slider">
     <%= render :partial => "image", :collection => @campaign.images %>
   </div>
+  <% end %>
+  
 <% end %>
 
 <% content_for :body_content_right do %>
