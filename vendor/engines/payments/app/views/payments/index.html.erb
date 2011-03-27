@@ -13,14 +13,6 @@
     <% end %>
   <% end %>
 
-  
-  <ul id="payments">
-    <% @payments.each do |payment| %>
-      <li>
-        <%= link_to payment.transaction_id, payment_url(payment) %>
-      </li>
-    <% end %>
-  </ul>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
