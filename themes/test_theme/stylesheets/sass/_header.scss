@@ -1,11 +1,12 @@
 #header {
+  margin-bottom: 10px;
   overflow: hidden;
   width: 100%;
   
   h1#logo {
     float: left;
-    height: 178px;
-    width: 96px;
+    height: 96px;
+    width: 178px;
   }
 
   nav#menu {
@@ -21,7 +22,7 @@
         padding: 0;
         a {
           font-weight: normal;
-          padding: 5px 30px;
+          padding: 5px 26px;
           text-decoration: none;
 
           &:link {
