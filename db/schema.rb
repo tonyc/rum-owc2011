@@ -35,6 +35,10 @@ ActiveRecord::Schema.define(:version => 20110327083706) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "status"
+    t.text     "personal_situation"
+    t.text     "mobility_help"
+    t.boolean  "willing_participate"
+    t.boolean  "agree_terms"
   end
 
   add_index "applicants", ["id"], :name => "index_applicants_on_id"
@@ -73,10 +77,13 @@ ActiveRecord::Schema.define(:version => 20110327083706) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
+    t.string   "email_address"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email_address"
   end
+
+  add_index "contacts", ["id"], :name => "index_contacts_on_id"
 
   create_table "donation_tags", :force => true do |t|
     t.integer "contact_id"
@@ -127,10 +134,10 @@ ActiveRecord::Schema.define(:version => 20110327083706) do
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
     t.string   "locale"
-    t.string   "meta_keywords"
-    t.text     "meta_description"
     t.string   "browser_title"
     t.string   "title"
+    t.string   "meta_keywords"
+    t.text     "meta_description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -193,21 +200,6 @@ ActiveRecord::Schema.define(:version => 20110327083706) do
 
   add_index "products", ["id"], :name => "index_products_on_id"
   add_index "products", ["image_id"], :name => "index_products_on_image_id"
-
-  create_table "recipients", :force => true do |t|
-    t.string   "name"
-    t.text     "story"
-    t.string   "year"
-    t.integer  "image_id"
-    t.integer  "amount_needed"
-    t.integer  "amount_received"
-    t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "active"
-  end
-
-  add_index "recipients", ["id"], :name => "index_recipients_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"

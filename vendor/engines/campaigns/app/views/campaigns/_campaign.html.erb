@@ -1,6 +1,7 @@
-<li>
-  <%= link_to image_tag(campaign.before_image_1.thumbnail("150x150>").url), campaign_url(campaign) %>
-  <p class="campaign name"><%= campaign.name %></p>
-  <p class="campaign target-level">Goal: <%= campaign.target_level %></p>
-  <p class="campaign status">Status: <%= campaign.status %></p>
+<li class="campaign">
+  <p class="name"><%= link_to campaign.name, campaign_url(campaign) %></p>
+  <%= link_to image_tag(campaign.before_image_1.thumbnail("70x60>").url), campaign_url(campaign) %>
+  <p class="date">Date: <%= campaign.year %></p>
+  <p class="target-level">Goal: <span><%= number_to_currency(campaign.target_level) %></span></p>
+  <p class="view-link"><%= link_to "{ View }", campaign_url(campaign) %>
 </li>
