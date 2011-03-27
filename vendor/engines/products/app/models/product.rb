@@ -5,4 +5,7 @@ class Product < ActiveRecord::Base
   validates :name, :presence => true, :uniqueness => true
   
   belongs_to :image
+  
+  scope :published,   where(:published => true)
+  scope :unpublished, where(:published => false)
 end

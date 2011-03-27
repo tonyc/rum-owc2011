@@ -8,9 +8,9 @@
         <div class="price"><%= number_to_currency product.price %></div>
         <div class="purchase">
           <%- if product.purchased? -%>
-            PURCHASED
+            Sorry, this item has been purchased.
           <%- else -%>
-            <a href="#">Purchase</a>
+            <%= signed_amazon_simple_pay_button(product.price, product.description, "product-#{product.id}") %>
           <%- end -%>
         </div>
       </li>

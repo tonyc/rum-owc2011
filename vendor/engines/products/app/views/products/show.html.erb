@@ -28,15 +28,9 @@
     </p>
   </section>
   <section>
-    <h1>Published</h1>
-    <p>
-      <%=raw @product.published %>
-    </p>
-  </section>
-  <section>
     <h1>Image</h1>
     <p>
-      <%= image_fu @product.image, nil %>
+      <%= image_fu @product.image, '360x240', :alt => @product.name %>
     </p>
   </section>
 <% end %>

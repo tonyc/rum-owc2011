@@ -1,6 +1,4 @@
 <% content_for :body_content_left do %>
-
- 
   <% if @recipients.present? %>
     <% @recipients.each do |recip| %>
       <%= recip.name %>
@@ -12,7 +10,6 @@
       <% end %>
     <% end %>
   <% end %>
-
   
   <ul id="payments">
     <% @payments.each do |payment| %>
