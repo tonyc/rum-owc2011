@@ -17,11 +17,15 @@ module Admin
       @note = @applicant.notes.build()
     end
 
+    def new
+      @applicant = Applicant.new
+      @statuses = Applicant::STATUSES
+    end
+
     def update
-     # if params[:applicant][:note].present? Note.new(:note, :applicant => Applicant.find(params[:applicant]))
       if @applicant.update_attributes(params[:applicant])
         flash[:success] = "Success"
-        redirect_to applicants_path
+        redirect_to admin_applicants_path
       else
         flash[:alert] = "Failed to Update"
         render 'edit'
