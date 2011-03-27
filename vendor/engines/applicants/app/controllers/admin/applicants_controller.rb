@@ -22,6 +22,30 @@ module Admin
       @statuses = Applicant::STATUSES
     end
 
+    def activate_campaign
+      @applicant = Applicant.find(params[:id])
+      if @applicant.activate_campaign
+        flash[:success] = "Campaign Activated"
+        redirect_to admin_applicants_path
+      else
+        flash[:alert] = "Failed to Activate Campaign"
+        redirect_to admin_applicants_path
+      end
+
+    end
+
+    def create
+      @applicant = Applicant.new(params[:applicant])
+      if @applicant.save
+        flash[:success] = "Success"
+        redirect_to admin_applicants_path
+      else
+        flash[:alert] = "Failed to Update"
+        @statuses = Applicant::STATUSES
+        render 'new'
+      end
+    end
+
     def update
       if @applicant.update_attributes(params[:applicant])
         flash[:success] = "Success"

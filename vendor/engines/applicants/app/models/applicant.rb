@@ -1,5 +1,5 @@
 class Applicant < ActiveRecord::Base
-  default_scope :order => 'created_at'
+  default_scope :order => 'created_at DESC'
   STATUSES = ['New Applicant', 'Declined', 'Follow-up Needed', 'Waiting on Documents', 'Wait Listed', 'Participating/Active Campaign', 'Completed']
 
   scope :isnewapp , where('status = ?', 'New Applicant')
@@ -12,6 +12,7 @@ class Applicant < ActiveRecord::Base
 
   has_many :notes
   after_save :clean_notes
+  has_one :campaign
 
   accepts_nested_attributes_for :notes
 
@@ -30,6 +31,15 @@ class Applicant < ActiveRecord::Base
       end
     end
 
+  end
+
+  def activate_campaign
+    if self.campaign
+      raise "Applicant '#{id}' already has campaign"
+    else
+      campaign = Campaign.new(:applicant => self, :name => self.name, :status => "new")
+      return campaign.save
+    end
   end
 
 end
