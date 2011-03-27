@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327070041) do
+ActiveRecord::Schema.define(:version => 20110327075656) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -33,9 +33,6 @@ ActiveRecord::Schema.define(:version => 20110327070041) do
     t.string   "guardian_state"
     t.string   "guardian_zip"
     t.string   "guardian_phone"
-    t.text     "matching_funds"
-    t.text     "orgainized_fundraiser"
-    t.text     "willing_participate"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -181,6 +178,23 @@ ActiveRecord::Schema.define(:version => 20110327070041) do
   end
 
   add_index "payments", ["id"], :name => "index_payments_on_id"
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.string   "short_description"
+    t.text     "description"
+    t.string   "price"
+    t.boolean  "purchased"
+    t.boolean  "published"
+    t.integer  "transaction_id"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "products", ["id"], :name => "index_products_on_id"
+  add_index "products", ["image_id"], :name => "index_products_on_image_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"

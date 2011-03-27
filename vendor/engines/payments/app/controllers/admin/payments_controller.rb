@@ -20,5 +20,9 @@ module Admin
     def find_campaigns
       @campaigns = Campaign.active
     end
+
+    def contact_ajax
+      @contacts = Contact.where('last_name LIKE ? )', "#{params[:q]}%", false)
+    end
   end
 end

@@ -1,4 +1,38 @@
 @charset "UTF-8";
+/* line 1, sass/_button.scss */
+.button {
+  background: #95c659;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  padding: 5px 10px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #95c659), color-stop(100%, #678041));
+  background-image: -moz-linear-gradient(top, #95c659 0%, #678041 100%);
+  background-image: linear-gradient(top, #95c659 0%, #678041 100%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  -moz-box-shadow: #666666 1px 1px 3px 0;
+  -webkit-box-shadow: #666666 1px 1px 3px 0;
+  -o-box-shadow: #666666 1px 1px 3px 0;
+  box-shadow: #666666 1px 1px 3px 0;
+}
+/* line 13, sass/_button.scss */
+.button:hover {
+  background: #000;
+}
+/* line 17, sass/_button.scss */
+.button:active {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #000000), color-stop(100%, #4d4d4d));
+  background-image: -moz-linear-gradient(top, #000000 0%, #4d4d4d 100%);
+  background-image: linear-gradient(top, #000000 0%, #4d4d4d 100%);
+}
+
 /* line 1, sass/_donate_runner.scss */
 .donate-runner {
   background: url(/images/runner-bkgd.png) 0 0 repeat-x;
@@ -10,7 +44,18 @@
   width: 960px;
 }
 /* line 9, sass/_donate_runner.scss */
-.donate-runner .link-wrapper a {
+.donate-runner .link-wrapper .social-links {
+  float: right;
+}
+/* line 12, sass/_donate_runner.scss */
+.donate-runner .link-wrapper .social-links a {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 20, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a.donate {
   background: url(/images/donate-runner.png) 0 0 no-repeat;
   color: transparent;
   display: block;
@@ -20,27 +65,28 @@
   top: 2px;
   width: 158px;
 }
-/* line 19, sass/_donate_runner.scss */
-.donate-runner .link-wrapper a:hover {
+/* line 30, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a.donate:hover {
   background-position: -316px 0;
 }
-/* line 22, sass/_donate_runner.scss */
-.donate-runner .link-wrapper a:active {
+/* line 33, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a.donate:active {
   background-position: -158px 0;
 }
 
 /* line 1, sass/_header.scss */
 #header {
+  margin-bottom: 10px;
   overflow: hidden;
   width: 100%;
 }
-/* line 5, sass/_header.scss */
+/* line 6, sass/_header.scss */
 #header h1#logo {
   float: left;
-  height: 178px;
-  width: 96px;
+  height: 96px;
+  width: 178px;
 }
-/* line 11, sass/_header.scss */
+/* line 12, sass/_header.scss */
 #header nav#menu {
   color: #969696;
   float: right;
@@ -48,30 +94,30 @@
   position: relative;
   top: 40px;
 }
-/* line 19, sass/_header.scss */
+/* line 20, sass/_header.scss */
 #header nav#menu ul li {
   margin: 0;
   padding: 0;
 }
-/* line 22, sass/_header.scss */
+/* line 23, sass/_header.scss */
 #header nav#menu ul li a {
   font-weight: normal;
-  padding: 5px 30px;
+  padding: 5px 14px;
   text-decoration: none;
 }
-/* line 27, sass/_header.scss */
+/* line 28, sass/_header.scss */
 #header nav#menu ul li a:link {
   color: #969696;
 }
-/* line 30, sass/_header.scss */
+/* line 31, sass/_header.scss */
 #header nav#menu ul li a:visited {
   color: #969696;
 }
-/* line 33, sass/_header.scss */
+/* line 34, sass/_header.scss */
 #header nav#menu ul li a:hover {
   color: #000;
 }
-/* line 38, sass/_header.scss */
+/* line 39, sass/_header.scss */
 #header nav#menu ul li:after {
   content: "|";
   color: #000;
@@ -80,7 +126,7 @@
   position: relative;
   top: -2px;
 }
-/* line 47, sass/_header.scss */
+/* line 48, sass/_header.scss */
 #header nav#menu ul li:last-child:after {
   content: "";
 }
@@ -89,13 +135,6 @@
 	Coin Slider jQuery plugin CSS styles
 	http://workshop.rs/projects/coin-slider
 */
-<<<<<<< HEAD
-/*
-	Coin Slider jQuery plugin CSS styles
-	http://workshop.rs/projects/coin-slider
-*/
-=======
->>>>>>> 7880076d356cafa39039bb1e2742b12bfb22b26b
 /* line 7, sass/_coin_slider.scss */
 .coin-slider {
   overflow: hidden;
@@ -148,4 +187,147 @@
   background-color: #000000;
   color: #FFFFFF;
   padding: 0px 10px;
+}
+
+/* line 3, sass/_footer.scss */
+#footer .footer-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+/* line 8, sass/_footer.scss */
+#footer .footer-top .newsletter {
+  background: #e9e8ea;
+  float: left;
+  height: 52px;
+  padding: 20px 0 0 30px;
+  width: 556px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 16, sass/_footer.scss */
+#footer .footer-top .newsletter form {
+  overflow: hidden;
+}
+/* line 19, sass/_footer.scss */
+#footer .footer-top .newsletter form label {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+/* line 29, sass/_footer.scss */
+#footer .footer-top .newsletter form input {
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+}
+/* line 35, sass/_footer.scss */
+#footer .footer-top .newsletter form input[type=text] {
+  font-size: 15px;
+  height: 24px;
+  position: relative;
+  margin-right: 5px;
+  top: 2px;
+  width: 269px;
+}
+/* line 46, sass/_footer.scss */
+#footer .footer-top .shop {
+  background: #e9e8ea;
+  float: right;
+  height: 52px;
+  padding: 20px 0 0 30px;
+  position: relative;
+  width: 332px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 55, sass/_footer.scss */
+#footer .footer-top .shop a {
+  background: url(/images/shop-btn.png) 0 0 no-repeat;
+  color: transparent;
+  display: block;
+  height: 77px;
+  left: -10px;
+  position: absolute;
+  top: -8px;
+  width: 184px;
+}
+/* line 65, sass/_footer.scss */
+#footer .footer-top .shop a:hover {
+  background-position: -368px 0;
+}
+/* line 69, sass/_footer.scss */
+#footer .footer-top .shop a:active {
+  background-position: -184px 0;
+}
+/* line 74, sass/_footer.scss */
+#footer .footer-top .shop .detail {
+  background: url(/images/shop-brackets.png) 0 0 no-repeat;
+  display: block;
+  float: right;
+  height: 77px;
+  position: relative;
+  top: -8px;
+  width: 185px;
+}
+/* line 83, sass/_footer.scss */
+#footer .footer-top .shop .detail span {
+  display: block;
+  margin: 11px 17px 0 17px;
+}
+/* line 91, sass/_footer.scss */
+#footer .footer-bottom {
+  background: #3f3f3f;
+  clear: both;
+  color: #e9e8ea;
+  font-size: 13px;
+  padding: 10px 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 99, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links {
+  float: right;
+  width: 500px;
+  text-align: right;
+}
+/* line 104, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li {
+  display: inline;
+}
+/* line 106, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li a {
+  color: #e9e8ea;
+  text-decoration: none;
+}
+/* line 110, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li a:after {
+  content: "|";
+  padding: 10px;
+}
+/* line 116, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li:last-child a:after {
+  content: "";
+  padding: 0;
+}
+
+/* line 8, sass/application.scss */
+#page {
+  width: 960px;
 }

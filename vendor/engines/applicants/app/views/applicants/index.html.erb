@@ -2,13 +2,7 @@
   
   <%= link_to "Click Here to fill out online Application", new_applicant_path %>
   
-  <ul id="applicants">
-    <% @applicants.each do |applicant| %>
-      <li>
-        <%= link_to applicant.name, applicant_url(applicant) %>
-      </li>
-    <% end %>
-  </ul>
+
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>

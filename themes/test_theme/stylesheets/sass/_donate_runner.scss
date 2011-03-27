@@ -6,7 +6,18 @@
     margin: 0 auto;
     width: 960px;
 
-    a {
+    .social-links {
+      float: right;
+
+      a {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    a.donate {
       background: url(/images/donate-runner.png) 0 0 no-repeat;
       color: transparent;
       display: block;

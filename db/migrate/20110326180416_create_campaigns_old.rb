@@ -1,4 +1,4 @@
-class CreateCampaigns < ActiveRecord::Migration
+class CreateCampaignsOld < ActiveRecord::Migration
   def self.up
     create_table :campaigns do |t|
       t.string :name

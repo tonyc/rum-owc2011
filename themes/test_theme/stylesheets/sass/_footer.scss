@@ -1,0 +1,123 @@
+#footer {
+
+  .footer-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+    .newsletter {
+      background: #e9e8ea; 
+      float: left;
+      height: 52px;
+      padding: 20px 0 0 30px;
+      width: 556px;
+      @include border-radius();
+      
+      form {
+        overflow: hidden;
+
+        label {
+          display: block;
+          float: left;
+          font-size: 20px;
+          font-weight: normal;
+          margin-right: 10px;
+          position: relative;
+          top: 5px;
+        }
+
+        input {
+          display: block;
+          float: left;
+          margin-bottom: 5px;
+        }
+
+        input[type=text] {
+          font-size: 15px;
+          height: 24px;
+          position: relative;
+          margin-right: 5px;
+          top: 2px;
+          width: 269px;
+        }
+      }
+    }
+
+    .shop {
+      background: #e9e8ea; 
+      float: right;
+      height: 52px;
+      padding: 20px 0 0 30px;
+      position: relative;
+      width: 332px;
+      @include border-radius();
+
+      a {
+        background: url(/images/shop-btn.png) 0 0 no-repeat;
+        color: transparent;
+        display: block;
+        height: 77px;
+        left: -10px;
+        position: absolute;
+        top: -8px;
+        width: 184px;
+
+        &:hover {
+          background-position: (-184px * 2) 0;
+        }
+
+        &:active {
+          background-position: (-184px * 1) 0;
+        }
+      }
+
+      .detail {
+        background: url(/images/shop-brackets.png) 0 0 no-repeat;
+        display: block;
+        float: right;
+        height: 77px;
+        position: relative;
+        top: -8px;
+        width: 185px;
+
+        span {
+          display: block;
+          margin: 11px 17px 0 17px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background: #3f3f3f;
+    clear: both;
+    color: #e9e8ea;
+    font-size: 13px;
+    padding: 10px 15px;
+    @include border-radius();
+
+    ol.footer-links {
+      float: right;
+      width: 500px;
+      text-align: right;
+
+      li {
+        display: inline;
+        a {
+          color: #e9e8ea;
+          text-decoration: none;
+
+          &:after {
+            content: "|";
+            padding: 10px;
+          }
+
+        }
+        &:last-child a:after {
+          content: "";
+          padding: 0;
+        }
+      }
+    }
+  }
+}
