@@ -1,7 +1,7 @@
 <li class="campaign">
-  <%= link_to image_tag(campaign.before_image_1.thumbnail("150x150>").url), campaign_url(campaign) %>
   <p class="name"><%= link_to campaign.name, campaign_url(campaign) %></p>
-  <p class="target-level">Goal: <%= number_to_currency(campaign.target_level) %></p>
-  <p class="status">Status: <%= campaign.status %></p>
-  <p class="success_story"><%= raw(truncate(campaign.success_story, :length => 200)) %></p>
+  <%= link_to image_tag(campaign.before_image_1.thumbnail("70x60>").url), campaign_url(campaign) %>
+  <p class="date">Date: <%= campaign.year %></p>
+  <p class="target-level">Goal: <span><%= number_to_currency(campaign.target_level) %></span></p>
+  <p class="view-link"><%= link_to "{ View }", campaign_url(campaign) %>
 </li>

@@ -2,6 +2,8 @@
   <ul class="campaigns">
     <%= render :partial => "campaign", :collection => @campaigns %>
   </ul>
+  
+  <%= will_paginate @campaigns, :class => "apple_pagination" %>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>

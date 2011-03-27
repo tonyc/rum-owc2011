@@ -264,4 +264,5 @@ DEPENDENCIES
   spork
   taps (>= 0.3.20)
   timecop (~> 0.3.5)
+  will_paginate (= 3.0.pre2)
   xml-simple

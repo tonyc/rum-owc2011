@@ -1,15 +1,23 @@
 .campaigns {
+	overflow: hidden;
+	margin-bottom: 15px;
+	
 	.campaign {
+		margin-bottom: 30px;
 		
-		margin-top: 5px;
+		width: 200px;
+		height: 95px;
 		
-		img {
-			float: left;
-			margin-right: 15px;
-		}
-
+		float:left;
+		padding: 10px;
+		border: 1px solid #bfbfbf;
+		margin-right: 15px;
+		
+		@include box-shadow(#bfbfbf, 0px, 2px, 2px);
+		@include border-radius();
+		
 		.name {
-			font-size: 22px;
+			font-size: 14px;
 			font-weight: bold;
 			margin-bottom: .5em;
 			
@@ -19,9 +27,26 @@
 			}
 		}
 		
-		.success_story {
-			margin-top: 1.5em;
+		.target-level span {
+			color: #95c659;
 		}
-	
+		
+		img {
+			float: left;
+			margin-right: 15px;
+		}
+		
+		.view-link {
+			float: right;
+			font-weight: bold;
+			margin-top: 1em;
+			
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+			
+		}
+		
 	}
 }
