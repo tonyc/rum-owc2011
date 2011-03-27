@@ -1,7 +1,5 @@
 class Campaign < ActiveRecord::Base
 
-  scope :active, where(:active => true).order(:position)
-  scope :recent, order("id desc")
   
   acts_as_indexed :fields => [:name, :status]
 
@@ -16,6 +14,10 @@ class Campaign < ActiveRecord::Base
   has_many :payments
   has_and_belongs_to_many :contacts
   belongs_to :applicant
+
+  named_scope :active, :order => :position, :conditions => {:active => true}
+  named_scope :recent, :order => "id desc"
+
 
   def payment_total
     sum = 0.00 + 0.00
