@@ -2,9 +2,84 @@
 /* line 3, sass/home.scss */
 .tagline {
   background: url(/images/home-quote.png) 0 0 no-repeat;
-  font-size: 16px;
+  font-size: 14px;
   height: 53px;
   line-height: 22px;
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 16px 0 0 100px;
+}
+
+/* line 13, sass/home.scss */
+.callouts {
+  overflow: hidden;
+}
+/* line 16, sass/home.scss */
+.callouts .block {
+  border-right: 1px solid #ccc;
+  float: left;
+  font-size: 14px;
+  height: 205px;
+  padding: 0 20px;
+  width: 286px;
+}
+/* line 24, sass/home.scss */
+.callouts .block:first-child {
+  padding-left: 0;
+}
+/* line 28, sass/home.scss */
+.callouts .block:last-child {
+  border-right: none;
+}
+/* line 32, sass/home.scss */
+.callouts .block .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* line 36, sass/home.scss */
+.callouts .block .title span {
+  color: #80ac43;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 44, sass/home.scss */
+.callouts .block:nth-child(2) .title span {
+  color: #774a8e;
+}
+/* line 49, sass/home.scss */
+.callouts .block img.family-img {
+  border: 1px solid #eee;
+  display: block;
+  float: left;
+  height: 82px;
+  margin: 0 10px 0 0;
+  width: 96px;
+}
+/* line 58, sass/home.scss */
+.callouts .block strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 64, sass/home.scss */
+.callouts .block p {
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+/* line 69, sass/home.scss */
+.callouts .block a.donate-button {
+  background: url(/images/donate-btn.png) 0 0 no-repeat;
+  color: transparent;
+  display: block;
+  height: 60px;
+  margin: 0 auto;
+  width: 170px;
+}
+/* line 77, sass/home.scss */
+.callouts .block a.donate-button:hover {
+  background-position: -340px 0;
+}
+/* line 81, sass/home.scss */
+.callouts .block a.donate-button:active {
+  background-position: -170px 0;
 }

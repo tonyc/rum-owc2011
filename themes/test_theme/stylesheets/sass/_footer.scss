@@ -1,4 +1,5 @@
 #footer {
+  margin-bottom: 20px;
 
   .footer-top {
     padding-top: 20px;
@@ -74,6 +75,7 @@
       .detail {
         background: url(/images/shop-brackets.png) 0 0 no-repeat;
         display: block;
+        font-size: 13px;
         float: right;
         height: 77px;
         position: relative;
@@ -82,7 +84,7 @@
 
         span {
           display: block;
-          margin: 11px 17px 0 17px;
+          margin: 11px 17px 0 20px;
         }
       }
     }

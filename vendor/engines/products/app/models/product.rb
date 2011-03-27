@@ -9,4 +9,9 @@ class Product < ActiveRecord::Base
   
   scope :published,   where(:published => true)
   scope :unpublished, where(:published => false)
+  
+  def self.random
+    ids = self.select(:id).published.all
+    find(ids[rand(ids.length)]["id"].to_i) unless ids.blank?
+  end
 end
