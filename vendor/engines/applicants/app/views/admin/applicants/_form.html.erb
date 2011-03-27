@@ -58,16 +58,7 @@
     <%= f.label :height -%>
     <%= f.text_field :height -%>
   </div>
-  
-  <div class='field'>
-    <%= f.label :education -%>
-    <%= f.text_field :education -%>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :military_service -%>
-    <%= f.text_field :military_service -%>
-  </div>
+
   
   <div class='field'>
     <%= f.label :occupation -%>
@@ -107,7 +98,7 @@
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>
-        <% [:matching_funds, :orgainized_fundraiser, :willing_participate].each_with_index do |part, part_index| %>
+        <% [:personal_situation, :mobility_help].each_with_index do |part, part_index| %>
           <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
             <%= link_to part.to_s.titleize, "##{part}" %>
           </li>
@@ -115,7 +106,7 @@
       </ul>
 
       <div id='page_part_editors'>
-        <% [:matching_funds, :orgainized_fundraiser, :willing_participate].each do |part| %>
+        <% [:personal_situation, :mobility_help].each do |part| %>
           <div class='page_part' id='<%= part %>'>
             <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
           </div>
@@ -123,7 +114,18 @@
       </div>
     </div>
   </div>
-  
+
+  <div class="field">
+    <%= f.label "Agreed To Terms"  %>
+    <%= f.check_box :agree_terms %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Willing to Participates"  %>
+    <%= f.check_box :willing_participate %>
+  </div>
+
+
   <div class="field">
     <%= f.label :status %><br />
     <%= f.select :status, @statuses,:prompt => "Select a Status" %>

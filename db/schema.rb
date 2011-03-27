@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327075656) do
+ActiveRecord::Schema.define(:version => 20110327083706) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -24,8 +24,6 @@ ActiveRecord::Schema.define(:version => 20110327075656) do
     t.string   "dob"
     t.string   "weight"
     t.string   "height"
-    t.string   "education"
-    t.string   "military_service"
     t.string   "occupation"
     t.string   "guardian"
     t.string   "guardian_address"
@@ -37,6 +35,10 @@ ActiveRecord::Schema.define(:version => 20110327075656) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "status"
+    t.text     "personal_situation"
+    t.text     "mobility_help"
+    t.boolean  "willing_participate"
+    t.boolean  "agree_terms"
   end
 
   add_index "applicants", ["id"], :name => "index_applicants_on_id"
