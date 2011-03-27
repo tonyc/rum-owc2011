@@ -1,0 +1,28 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    contacts:
+      title: Contacts
+  admin:
+    contacts:
+      import:
+        file: Import File
+        applicant: Applicant to Link (optional)
+      index:
+        title: Contacts
+        create_new: Add New Contact
+        import_contacts: Import Contacts
+        reorder: Reorder Contacts
+        reorder_done: Done Reordering Contacts
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Contacts yet. Click "Add New Contact" to add your first contact.
+      contact:
+        view_live_html: View this contact live <br/><em>(opens in a new window)</em>
+        edit: Edit this contact
+        delete: Remove this contact forever
+  contacts:
+    show:
+      other: Other Contacts
