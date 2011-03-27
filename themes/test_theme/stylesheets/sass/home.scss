@@ -2,10 +2,86 @@
 
 .tagline {
   background: url(/images/home-quote.png) 0 0 no-repeat;
-  font-size: 16px;
+  font-size: 14px;
   height: 53px;
   line-height: 22px;
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 16px 0 0 100px;
+}
 
+.callouts {
+  overflow: hidden;
+
+  .block {
+    border-right: 1px solid #ccc;
+    float: left;
+    font-size: 14px;
+    height: 205px;
+    padding: 0 20px;
+    width: 286px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .title {
+      font-size:20px;
+      margin-bottom: 20px;
+
+      span {
+        color: #80ac43;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    &:nth-child(2) {
+      .title span {
+        color: #774a8e;
+      }
+    }
+
+    img.family-img {
+      border: 1px solid #eee;
+      display: block;
+      float: left;
+      height: 82px;
+      margin: 0 10px 0 0;
+      width: 96px;
+    }
+
+    strong {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+
+    a.donate-button {
+      background: url(/images/donate-btn.png) 0 0 no-repeat;
+      color: transparent;
+      display: block;
+      height: 60px;
+      margin: 0 auto;
+      width: 170px;
+
+      &:hover {
+        background-position: (-170px * 2) 0;
+      }
+      
+      &:active {
+        background-position: (-170px * 1) 0;
+      }
+    }
+
+  }
 }

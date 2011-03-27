@@ -60,16 +60,6 @@
   </div>
   
   <div class='field'>
-    <%= f.label :education -%>
-    <%= f.text_field :education -%>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :military_service -%>
-    <%= f.text_field :military_service -%>
-  </div>
-  
-  <div class='field'>
     <%= f.label :occupation -%>
     <%= f.text_field :occupation -%>
   </div>
@@ -107,7 +97,7 @@
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>
-        <% [:matching_funds, :orgainized_fundraiser, :willing_participate].each_with_index do |part, part_index| %>
+        <% [:personal_situation, :mobility_help].each_with_index do |part, part_index| %>
           <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
             <%= link_to part.to_s.titleize, "##{part}" %>
           </li>
@@ -115,7 +105,7 @@
       </ul>
 
       <div id='page_part_editors'>
-        <% [:matching_funds, :orgainized_fundraiser, :willing_participate].each do |part| %>
+        <% [:personal_situation, :mobility_help].each do |part| %>
           <div class='page_part' id='<%= part %>'>
             <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
           </div>
@@ -123,6 +113,45 @@
       </div>
     </div>
   </div>
+
+  <div class="field">
+    <%= f.label "Willing to Participates"  %>
+    <%= f.check_box :willing_participate %>
+  </div>
+
+  <div class="field">
+    Please be aware that we will need to collect the following information also:
+    <ul>
+      <li>Statement from physician outlining your disability and a recommendation for approval of grant.</li>
+      <li>Statement from one other source such as social worker, therapist, pastor, personal attendant describing your situation and recommendation for approval of grant.</li>
+      <li>Copy of last year’s income tax return along with the Income and Expense Summary (see page four) of this application.</li>
+    </ul>
+  </div>
+  <div class="field">
+    We would like to include your name and information in our database in order to submit and secure grants and funding from both public and private foundations, future fundraising efforts, donation solicitations and other types of publications and marketing materials used by Mobility for Independence.
+    <br>
+
+    In addition, if you have a current photo of the applicant, we would appreciate an attachment of such photo to this application.  We would like the ability to reproduce that image in any future grant applications, website updates, publications, marketing materials, etc.
+    <br>
+
+
+
+    INFORMATION AND PHOTOGRAPHIC/MODEL PROPERTY RELEASE <br>
+
+
+    I hereby grant Mobility for Independence permission to use the information in this application as well as any attached photographs taken of myself for any legitimate uses they deem proper.  Further, I relinquish and grant Mobility for Independence all right, title and interest in the transparencies, negatives, photographic prints and/or reproductions that  I have attached to this application.
+    <br>
+
+    
+  </div>
+
+  <div class="field">
+    <%= f.label "I Agreed To The Terms"  %>
+    <%= f.check_box :agree_terms %>
+  </div>
+
+
+
 
   <%= f.submit "Submit Application" %> <%= link_to "Cancel", root_path %>
 <% end -%>

@@ -5,6 +5,8 @@
   display: block;
   font-size: 15px;
   padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
   @include linear-gradient(color-stops(#95c659, #678041));
   @include border-radius();
   @include text-shadow();
@@ -17,4 +19,9 @@
   &:active {
     @include linear-gradient(color-stops(#000, lighten(#000, 30%)));
   }
+}
+
+a.button {
+  float: right;
+  padding: 7px 10px;
 }

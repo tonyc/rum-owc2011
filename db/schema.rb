@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327075656) do
+ActiveRecord::Schema.define(:version => 20110327083706) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -24,8 +24,6 @@ ActiveRecord::Schema.define(:version => 20110327075656) do
     t.string   "dob"
     t.string   "weight"
     t.string   "height"
-    t.string   "education"
-    t.string   "military_service"
     t.string   "occupation"
     t.string   "guardian"
     t.string   "guardian_address"
@@ -195,6 +193,21 @@ ActiveRecord::Schema.define(:version => 20110327075656) do
 
   add_index "products", ["id"], :name => "index_products_on_id"
   add_index "products", ["image_id"], :name => "index_products_on_image_id"
+
+  create_table "recipients", :force => true do |t|
+    t.string   "name"
+    t.text     "story"
+    t.string   "year"
+    t.integer  "image_id"
+    t.integer  "amount_needed"
+    t.integer  "amount_received"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "active"
+  end
+
+  add_index "recipients", ["id"], :name => "index_recipients_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"

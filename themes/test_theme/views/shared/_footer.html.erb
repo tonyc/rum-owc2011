@@ -8,9 +8,9 @@
 
   </div>
   <div class="shop">
-    <%= link_to "Shop", "#" %>
+    <%= link_to "Shop", products_url %>
     <div class="detail">
-      <span>Crave Gift Card 50% Off A Grand Slam at Denny's</span>
+      <span><%= @random_product ? @random_product.short_description : 'Find something for yourself and help us out' %></span>
     </div>
   </div>
 </div>
