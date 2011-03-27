@@ -1,6 +1,8 @@
 class Campaign < ActiveRecord::Base
 
-  scope :active, :conditions => ["active = true"], :order => "position ASC"
+  scope :active, where(:active => true).order(:position)
+  scope :recent, order("id desc")
+  
   acts_as_indexed :fields => [:name, :status]
 
   validates :name, :presence => true, :uniqueness => true

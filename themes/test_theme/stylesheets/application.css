@@ -1,17 +1,15 @@
 @charset "UTF-8";
 /* line 1, sass/_button.scss */
 .button {
-  background: #95c659;
+  background: url(/images/btn.png) 0 0 repeat-x;
   border: none;
   color: #fff;
   display: block;
   font-size: 15px;
-  padding: 5px 10px;
+  height: 30px;
+  padding: 0 10px 0;
   text-align: center;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #95c659), color-stop(100%, #678041));
-  background-image: -moz-linear-gradient(top, #95c659 0%, #678041 100%);
-  background-image: linear-gradient(top, #95c659 0%, #678041 100%);
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
@@ -26,19 +24,18 @@
 }
 /* line 15, sass/_button.scss */
 .button:hover {
-  background: #000;
+  background-position: 0 -60px;
 }
 /* line 19, sass/_button.scss */
 .button:active {
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #000000), color-stop(100%, #4d4d4d));
-  background-image: -moz-linear-gradient(top, #000000 0%, #4d4d4d 100%);
-  background-image: linear-gradient(top, #000000 0%, #4d4d4d 100%);
+  background-position: 0 -30px;
 }
 
 /* line 24, sass/_button.scss */
 a.button {
   float: right;
-  padding: 7px 10px;
+  height: 23px;
+  padding-top: 7px;
 }
 
 /* line 1, sass/_donate_runner.scss */

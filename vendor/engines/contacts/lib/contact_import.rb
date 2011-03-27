@@ -1,3 +1,5 @@
+require 'csv'
+
 class ContactImporter
   attr_accessor :expected_headers, :column_mappings
 
@@ -51,10 +53,10 @@ class ContactImporter
                        ]
   end
 
-  def import(loc)
+  def import(stream)
     contacts_added = []
     ActiveRecord::Base.transaction do
-      CSV.open(loc,"rb") do |row|
+      csv = CSV::Reader.parse(stream) do |row|
         # Yes, this is gross.  Process expected_headers on first
         # iteration, then set it to nil to avoid further testing
         unless self.expected_headers.nil?
@@ -78,8 +80,8 @@ class ContactImporter
           end
         end
       end
+      contacts_added
     end
-    contacts_added
   end
 
   def mappable_campaign_value(value)
