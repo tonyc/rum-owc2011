@@ -20,7 +20,7 @@ class CampaignsController < ApplicationController
 protected
 
   def find_all_campaigns
-    @campaigns = Campaign.recent.active.paginate(:page => params[:page], :per_page => 12)
+    @campaigns = Campaign.active.paginate(:page => params[:page], :per_page => 12)
   end
 
   def find_page
