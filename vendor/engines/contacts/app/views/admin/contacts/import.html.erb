@@ -1,0 +1,50 @@
+<style>
+.ui-autocomplete {
+	max-height: 100px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+	height: 100px;
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+$(function($) {
+    $('#applicant_search').autocomplete({
+        source: function(req, resp) {
+            $.ajax({
+                url: '../applicants.js',
+                data: {'search': req.term},
+                dataType: "json",
+                success: function(data) {
+                    var transformed = $(data).map(function(elem,value) {
+                        return value.applicant.name
+                    });
+                    resp(transformed);
+                }});
+        }
+    });
+});
+
+
+</script>
+<%= form_tag admin_contacts_import_url do |f| -%>
+<div class='field'>
+  <%= t('.file') %>
+  <%= file_field_tag :import_file %>
+</div>
+<div class='field ui-widget'>
+  <%= t('.applicant') %>
+  <%= text_field_tag 'applicant_search' %>
+</div>
+<%= submit_tag "Import Contacts" %>
+<% end -%>

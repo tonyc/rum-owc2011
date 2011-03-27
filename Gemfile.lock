@@ -49,6 +49,7 @@ PATH
   specs:
     refinerycms-applicants (1.0)
     refinerycms-campaigns (1.0)
+    refinerycms-contacts (1.0)
     refinerycms-payments (1.0)
     refinerycms-products (1.0)
 
@@ -255,6 +256,7 @@ DEPENDENCIES
   refinerycms!
   refinerycms-applicants (= 1.0)!
   refinerycms-campaigns (= 1.0)!
+  refinerycms-contacts (= 1.0)!
   refinerycms-payments (= 1.0)!
   refinerycms-products (= 1.0)!
   refinerycms-theming (= 1.0.0)
