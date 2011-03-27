@@ -48,8 +48,8 @@ PATH
   remote: vendor/engines
   specs:
     refinerycms-applicants (1.0)
+    refinerycms-campaigns (1.0)
     refinerycms-payments (1.0)
-    refinerycms-recipients (1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -253,8 +253,8 @@ DEPENDENCIES
   rails (= 3.0.5)
   refinerycms!
   refinerycms-applicants (= 1.0)!
+  refinerycms-campaigns (= 1.0)!
   refinerycms-payments (= 1.0)!
-  refinerycms-recipients (= 1.0)!
   refinerycms-theming (= 1.0.0)
   rspec (>= 2.5)
   rspec-rails (>= 2.5)

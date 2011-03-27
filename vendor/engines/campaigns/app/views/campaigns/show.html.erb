@@ -1,0 +1,81 @@
+<% content_for :body_content_title do %>
+  <%= @campaign.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @campaign.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Success Story</h1>
+    <p>
+      <%=raw @campaign.success_story %>
+    </p>
+  </section>
+  <section>
+    <h1>Year</h1>
+    <p>
+      <%=raw @campaign.year %>
+    </p>
+  </section>
+  <section>
+    <h1>Before Image 1</h1>
+    <p>
+      <%= image_fu @campaign.before_image_1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Before Image 2</h1>
+    <p>
+      <%= image_fu @campaign.before_image_2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>After Image 1</h1>
+    <p>
+      <%= image_fu @campaign.after_image_1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>After Image 2</h1>
+    <p>
+      <%= image_fu @campaign.after_image_2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>After Image 3</h1>
+    <p>
+      <%= image_fu @campaign.after_image_3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Target Level</h1>
+    <p>
+      <%=raw @campaign.target_level %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @campaign.status %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="campaigns">
+      <% @campaigns.each do |campaign| %>
+        <li>
+          <%= link_to campaign.name, campaign_url(campaign) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

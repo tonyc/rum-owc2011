@@ -1,0 +1,27 @@
+.donate-runner {
+  background: url(/images/runner-bkgd.png) 0 0 repeat-x;
+  height: 29px;
+  
+  .link-wrapper {
+    margin: 0 auto;
+    width: 960px;
+
+    a {
+      background: url(/images/donate-runner.png) 0 0 no-repeat;
+      color: transparent;
+      display: block;
+      float: right;
+      height: 48px;
+      position: relative;
+      top: 2px;
+      width: 158px;
+
+      &:hover {
+        background-position: (-158px * 2) 0;
+      }
+      &:active {
+        background-position: (-158px * 1) 0;
+      }
+    }
+  }
+}

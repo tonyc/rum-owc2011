@@ -3,6 +3,7 @@
   <%= render :partial => "/shared/head", :locals => {:theme => true} %>
   <body>
     <%= render :partial => "/shared/site_bar" %>
+    <%= render :partial => "/shared/donate_runner" %>
     <div id='page_container'>
       <div id='page'>
         <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>

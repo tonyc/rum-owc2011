@@ -8,6 +8,6 @@ require 'faker'
 #     title { "Post #{sn}" }
 #     body  { "Lorem ipsum..." }
 #   end
-Recipient.blueprint do
+Campaign.blueprint do
   name { Faker::Name.first_name }
 end
