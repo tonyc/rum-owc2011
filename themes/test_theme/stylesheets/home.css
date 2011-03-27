@@ -1,5 +1,10 @@
 @charset "UTF-8";
-/* 
-    Override default refinery homepage styles here. 
-    These only apply to the homepage of your site. 
-*/
+/* line 3, sass/home.scss */
+.tagline {
+  background: url(/images/home-quote.png) 0 0 no-repeat;
+  font-size: 16px;
+  height: 53px;
+  line-height: 22px;
+  margin-top: 15px;
+  padding: 16px 0 0 100px;
+}
