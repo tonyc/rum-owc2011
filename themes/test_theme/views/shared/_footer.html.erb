@@ -3,4 +3,8 @@
                       :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
 </p>
 
+<ol id="footer-links">
+  <%= render :partial => "shared/footer_link", :collection => top_level_pages_without_home %>
+</ol>
+
 <%= render :partial => 'shared/javascripts' %>
