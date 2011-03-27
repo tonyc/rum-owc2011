@@ -3,7 +3,7 @@ class Payment < ActiveRecord::Base
   
   acts_as_indexed :fields => [:transaction_id]
 
-  belongs_to :recipient
+  belongs_to :campaign
   
   validates :transaction_id, :presence => true, :uniqueness => true
 

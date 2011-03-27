@@ -1,2 +1,23 @@
---- {}
-
+--- 
+recipients_001: 
+  position: "1"
+  name: Jill
+  created_at: 2011-03-26 19:41:29.007085
+  updated_at: 2011-03-26 19:41:29.007085
+  success_story: |-
+    <p>Jill needs a new van</p>
+    <br />
+  id: "2"
+  year: "2011"
+  target_level: "35000"
+  active: 
+recipients_002: 
+  position: "0"
+  name: Fred
+  created_at: 2011-03-26 19:41:03.398041
+  updated_at: 2011-03-26 20:58:46.001711
+  success_story: <p>Fred likes pie &lt;p&gt;YO!!&lt;/p&gt;</p>
+  id: "1"
+  year: "2011"
+  target_level: "20000"
+  active: t

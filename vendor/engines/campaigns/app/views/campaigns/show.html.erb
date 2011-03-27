@@ -1,0 +1,50 @@
+<% content_for :body_content_title do %>
+  <%= @campaign.name %>
+<% end %>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "coin-slider.js", "campaigns.js" %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @campaign.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Success Story</h1>
+    <p>
+      <%=raw @campaign.success_story %>
+    </p>
+  </section>
+  <section>
+    <h1>Year</h1>
+    <p>
+      <%=raw @campaign.year %>
+    </p>
+  </section>
+  
+  <% if @campaign.images.present? %>
+  <div id="coin-slider">
+    <%= render :partial => "image", :collection => @campaign.images %>
+  </div>
+  <% end %>
+  
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="campaigns">
+      <% @campaigns.each do |campaign| %>
+        <li>
+          <%= link_to campaign.name, campaign_url(campaign) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

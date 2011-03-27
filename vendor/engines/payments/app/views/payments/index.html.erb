@@ -1,12 +1,12 @@
 <% content_for :body_content_left do %>
 
  
-  <% if @recipients.present? %>
-    <% @recipients.each do |recip| %>
-      <%= recip.name %>
+  <% if @campaigns.present? %>
+    <% @campaigns.each do |campaign| %>
+      <%= campaign.name %>
       <%= amazon_simple_pay_form_tag do %>
         <%= text_field_tag 'amount' %><br/><br/>
-        <%= hidden_field_tag 'referenceId', "#{recip.id}" %>
+        <%= hidden_field_tag 'referenceId', "#{campaign.id}" %>
         <%= hidden_field_tag 'description', 'something else' %>
         <%= image_submit_tag('http://g-ecx.images-amazon.com/images/G/01/asp/golden_medium_donate_withlogo_whitebg.gif') %>
       <% end %>

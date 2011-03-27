@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327040241) do
+ActiveRecord::Schema.define(:version => 20110327041057) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -46,12 +46,22 @@ ActiveRecord::Schema.define(:version => 20110327040241) do
 
   create_table "campaigns", :force => true do |t|
     t.string   "name"
+    t.text     "success_story"
+    t.string   "year"
+    t.integer  "before_image_1_id"
+    t.integer  "before_image_2_id"
+    t.integer  "after_image_1_id"
+    t.integer  "after_image_2_id"
+    t.integer  "after_image_3_id"
     t.float    "target_level"
-    t.float    "current_level"
-    t.integer  "status"
+    t.string   "status"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "active"
   end
+
+  add_index "campaigns", ["id"], :name => "index_campaigns_on_id"
 
   create_table "campaigns_contacts", :id => false, :force => true do |t|
     t.integer "campaign_id"
@@ -162,7 +172,7 @@ ActiveRecord::Schema.define(:version => 20110327040241) do
 
   create_table "payments", :force => true do |t|
     t.float    "amount"
-    t.integer  "recipient_id"
+    t.integer  "campaign_id"
     t.string   "transaction_id"
     t.integer  "position"
     t.datetime "created_at"
@@ -170,21 +180,6 @@ ActiveRecord::Schema.define(:version => 20110327040241) do
   end
 
   add_index "payments", ["id"], :name => "index_payments_on_id"
-
-  create_table "recipients", :force => true do |t|
-    t.string   "name"
-    t.text     "story"
-    t.string   "year"
-    t.integer  "image_id"
-    t.integer  "amount_needed"
-    t.integer  "amount_received"
-    t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "active"
-  end
-
-  add_index "recipients", ["id"], :name => "index_recipients_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"
