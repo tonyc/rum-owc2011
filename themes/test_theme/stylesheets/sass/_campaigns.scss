@@ -1,0 +1,27 @@
+.campaigns {
+	.campaign {
+		
+		margin-top: 5px;
+		
+		img {
+			float: left;
+			margin-right: 15px;
+		}
+
+		.name {
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: .5em;
+			
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+		
+		.success_story {
+			margin-top: 1.5em;
+		}
+	
+	}
+}

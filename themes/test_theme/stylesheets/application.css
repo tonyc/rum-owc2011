@@ -327,7 +327,32 @@
   padding: 0;
 }
 
-/* line 8, sass/application.scss */
+/* line 2, sass/_campaigns.scss */
+.campaigns .campaign {
+  margin-top: 5px;
+}
+/* line 6, sass/_campaigns.scss */
+.campaigns .campaign img {
+  float: left;
+  margin-right: 15px;
+}
+/* line 11, sass/_campaigns.scss */
+.campaigns .campaign .name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+/* line 16, sass/_campaigns.scss */
+.campaigns .campaign .name a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 22, sass/_campaigns.scss */
+.campaigns .campaign .success_story {
+  margin-top: 1.5em;
+}
+
+/* line 9, sass/application.scss */
 #page {
   width: 960px;
 }
