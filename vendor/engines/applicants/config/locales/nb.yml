@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    applicants:
+      title: Applicants
+  admin:
+    applicants:
+      index:
+        title: Applicants
+        create_new: Lag en ny Applicant
+        reorder: Endre rekkefølgen på Applicants
+        reorder_done: Ferdig å endre rekkefølgen Applicants
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Applicants enda. Klikk på "Lag en ny Applicant" for å legge til din første applicant.
+      applicant:
+        view_live_html: Vis hvordan denne applicant ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne applicant
+        delete: Fjern denne applicant permanent
+  applicants:
+    show:
+      other: Andre Applicants
