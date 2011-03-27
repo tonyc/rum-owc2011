@@ -2,7 +2,17 @@
   <ul id="products">
     <% @products.each do |product| %>
       <li>
-        <%= link_to product.name, product_url(product) %>
+        <%= image_fu product.image, '360x240', :alt => product.name %>
+        <div class="name"><%= link_to product.name, product_url(product) %></div>
+        <div class="description"><%= raw product.description %></div>
+        <div class="price"><%= number_to_currency product.price %></div>
+        <div class="purchase">
+          <%- if product.purchased? -%>
+            PURCHASED
+          <%- else -%>
+            <a href="#">Purchase</a>
+          <%- end -%>
+        </div>
       </li>
     <% end %>
   </ul>

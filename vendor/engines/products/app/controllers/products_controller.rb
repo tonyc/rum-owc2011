@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
 protected
 
   def find_all_products
-    @products = Product.find(:all, :order => "position ASC")
+    @products = Product.order("purchased, position ASC").where(:published => true)
   end
 
   def find_page
