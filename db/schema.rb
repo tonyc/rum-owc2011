@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327041057) do
+ActiveRecord::Schema.define(:version => 20110327075656) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -33,9 +33,6 @@ ActiveRecord::Schema.define(:version => 20110327041057) do
     t.string   "guardian_state"
     t.string   "guardian_zip"
     t.string   "guardian_phone"
-    t.text     "matching_funds"
-    t.text     "orgainized_fundraiser"
-    t.text     "willing_participate"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
