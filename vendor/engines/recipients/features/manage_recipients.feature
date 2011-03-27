@@ -1,4 +1,4 @@
-@recipients
+@recipients @wip
 Feature: Recipients
   In order to have recipients on my website
   As an administrator

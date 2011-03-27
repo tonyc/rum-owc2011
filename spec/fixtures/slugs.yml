@@ -1,0 +1,91 @@
+--- 
+slugs_006: 
+  scope: 
+  name: mwagner72
+  created_at: 2011-03-26 18:52:18.032323
+  sequence: "1"
+  sluggable_type: User
+  id: "6"
+  sluggable_id: "3"
+  locale: en
+slugs_007: 
+  scope: 
+  name: nyourchuck
+  created_at: 2011-03-26 18:53:34.433903
+  sequence: "1"
+  sluggable_type: User
+  id: "7"
+  sluggable_id: "4"
+  locale: en
+slugs_008: 
+  scope: 
+  name: payments-page
+  created_at: 2011-03-26 19:08:35.580929
+  sequence: "1"
+  sluggable_type: Page
+  id: "8"
+  sluggable_id: "4"
+  locale: en
+slugs_010: 
+  scope: 
+  name: recipients-page
+  created_at: 2011-03-26 19:37:05.762304
+  sequence: "1"
+  sluggable_type: Page
+  id: "10"
+  sluggable_id: "5"
+  locale: en
+slugs_009: 
+  scope: 
+  name: wwilkins
+  created_at: 2011-03-26 19:12:40.623573
+  sequence: "1"
+  sluggable_type: User
+  id: "9"
+  sluggable_id: "5"
+  locale: en
+slugs_001: 
+  scope: 
+  name: tony
+  created_at: 2011-03-26 16:30:13.218006
+  sequence: "1"
+  sluggable_type: User
+  id: "1"
+  sluggable_id: "1"
+  locale: en
+slugs_002: 
+  scope: 
+  name: admin
+  created_at: 2011-03-26 16:36:32.92561
+  sequence: "1"
+  sluggable_type: User
+  id: "2"
+  sluggable_id: "2"
+  locale: en
+slugs_003: 
+  scope: 
+  name: home
+  created_at: 2011-03-26 16:37:25.193718
+  sequence: "1"
+  sluggable_type: Page
+  id: "3"
+  sluggable_id: "1"
+  locale: en
+slugs_004: 
+  scope: 
+  name: page-not-found
+  created_at: 2011-03-26 16:37:25.371874
+  sequence: "1"
+  sluggable_type: Page
+  id: "4"
+  sluggable_id: "2"
+  locale: en
+slugs_005: 
+  scope: 
+  name: about
+  created_at: 2011-03-26 16:37:25.549065
+  sequence: "1"
+  sluggable_type: Page
+  id: "5"
+  sluggable_id: "3"
+  locale: en

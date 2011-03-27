@@ -1,0 +1,76 @@
+--- 
+page_parts_008: 
+  position: 
+  created_at: 2011-03-26 19:37:06.009998
+  body: 
+  title: Body
+  updated_at: 2011-03-26 19:37:06.009998
+  page_id: "5"
+  id: "8"
+page_parts_009: 
+  position: 
+  created_at: 2011-03-26 19:37:06.023663
+  body: 
+  title: Side Body
+  updated_at: 2011-03-26 19:37:06.023663
+  page_id: "5"
+  id: "9"
+page_parts_001: 
+  position: "0"
+  created_at: 2011-03-26 16:37:25.290871
+  body: <p>Welcome to our site. This is just a place holder page while we gather our content.</p>
+  title: Body
+  updated_at: 2011-03-26 16:37:25.290871
+  page_id: "1"
+  id: "1"
+page_parts_002: 
+  position: "1"
+  created_at: 2011-03-26 16:37:25.328144
+  body: <p>This is another block of content over here.</p>
+  title: Side Body
+  updated_at: 2011-03-26 16:37:25.328144
+  page_id: "1"
+  id: "2"
+page_parts_003: 
+  position: "0"
+  created_at: 2011-03-26 16:37:25.508438
+  body: <h2>Sorry, there was a problem...</h2><p>The page you requested was not found.</p><p><a href='/'>Return to the home page</a></p>
+  title: Body
+  updated_at: 2011-03-26 16:37:25.508438
+  page_id: "2"
+  id: "3"
+page_parts_004: 
+  position: "0"
+  created_at: 2011-03-26 16:37:25.575827
+  body: |-
+    <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero hendrerit dapibus.
+    
+    Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>
+  title: Body
+  updated_at: 2011-03-26 16:37:25.575827
+  page_id: "3"
+  id: "4"
+page_parts_005: 
+  position: "1"
+  created_at: 2011-03-26 16:37:25.617763
+  body: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla nisi a elit. Duis ultricies orci ut arcu. Ut ac nibh. Duis blandit rhoncus magna. Pellentesque semper risus ut magna. Etiam pulvinar tellus eget diam. Morbi blandit. Donec pulvinar mauris at ligula. Sed pellentesque, ipsum id congue molestie, lectus risus egestas pede, ac viverra diam lacus ac urna. Aenean elit.</p>
+  title: Side Body
+  updated_at: 2011-03-26 16:37:25.617763
+  page_id: "3"
+  id: "5"
+page_parts_006: 
+  position: 
+  created_at: 2011-03-26 19:08:35.852786
+  body: 
+  title: Body
+  updated_at: 2011-03-26 19:08:35.852786
+  page_id: "4"
+  id: "6"
+page_parts_007: 
+  position: 
+  created_at: 2011-03-26 19:08:35.868278
+  body: 
+  title: Side Body
+  updated_at: 2011-03-26 19:08:35.868278
+  page_id: "4"
+  id: "7"

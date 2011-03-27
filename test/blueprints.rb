@@ -1,4 +1,5 @@
 require 'machinist/active_record'
+require 'faker'
 
 # Add your blueprints here.
 #
@@ -7,3 +8,6 @@ require 'machinist/active_record'
 #     title { "Post #{sn}" }
 #     body  { "Lorem ipsum..." }
 #   end
+Recipient.blueprint do
+  name { Faker::Name.first_name }
+end

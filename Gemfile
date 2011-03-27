@@ -13,14 +13,14 @@ group :test do
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber'
-  gem 'rspec'
-  gem 'rspec-rails'
+  gem 'rspec', '>= 2.5'
+  gem 'rspec-rails', '>= 2.5'
   gem 'spork'
   gem 'launchy'
 
   gem 'machinist', '>= 2.0.0.beta1'
   gem 'faker'
-  gem 'capybara', '~>0.4.0'
+  gem 'capybara', '~>0.4.1.1'
 
   gem 'email_spec', '~>0.6.2', :require => nil
   gem 'timecop', '~>0.3.5'
@@ -31,6 +31,7 @@ end
 gem 'xml-simple'
 gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master' 
 gem 'refinerycms-theming', '=1.0.0'
+
 # gem 'sqlite3'
 gem 'pg'
 gem "compass", ">= 0.10.6"

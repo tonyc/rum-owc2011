@@ -1,0 +1,131 @@
+
+--- 
+pages: 
+  columns: 
+  - id
+  - title
+  - parent_id
+  - position
+  - path
+  - created_at
+  - updated_at
+  - meta_keywords
+  - meta_description
+  - show_in_menu
+  - link_url
+  - menu_match
+  - deletable
+  - custom_title
+  - custom_title_type
+  - draft
+  - browser_title
+  - skip_to_first_child
+  - lft
+  - rgt
+  - depth
+  records: 
+  - - "1"
+    - Home
+    - 
+    - "0"
+    - 
+    - 2011-03-26 16:37:25.172406
+    - 2011-03-26 16:37:25.172406
+    - 
+    - 
+    - true
+    - /
+    - ^/$
+    - false
+    - 
+    - none
+    - false
+    - 
+    - false
+    - "1"
+    - "4"
+    - 
+  - - "2"
+    - Page not found
+    - "1"
+    - "0"
+    - 
+    - 2011-03-26 16:37:25.358089
+    - 2011-03-26 16:37:25.491984
+    - 
+    - 
+    - false
+    - 
+    - ^/404$
+    - false
+    - 
+    - none
+    - false
+    - 
+    - false
+    - "2"
+    - "3"
+    - "1"
+  - - "3"
+    - About
+    - 
+    - "1"
+    - 
+    - 2011-03-26 16:37:25.536348
+    - 2011-03-26 16:37:25.536348
+    - 
+    - 
+    - true
+    - 
+    - 
+    - true
+    - 
+    - none
+    - false
+    - 
+    - false
+    - "5"
+    - "6"
+    - 
+  - - "4"
+    - Payments
+    - 
+    - "2"
+    - 
+    - 2011-03-26 19:08:35.564508
+    - 2011-03-26 19:08:35.564508
+    - 
+    - 
+    - true
+    - /payments
+    - ^/payments(\/|\/.+?|)$
+    - false
+    - 
+    - none
+    - false
+    - 
+    - false
+    - "7"
+    - "8"
+    - 
+  - - "5"
+    - Recipients
+    - 
+    - "3"
+    - 
+    - 2011-03-26 19:37:05.750996
+    - 2011-03-26 19:37:05.750996
+    - 
+    - 
+    - true
+    - /recipients
+    - ^/recipients(\/|\/.+?|)$
+    - false
+    - 
+    - none
+    - false
+    - 
+    - false
+    - "9"
+    - "10"
+    - 

@@ -1,0 +1,107 @@
+
+--- 
+users: 
+  columns: 
+  - id
+  - username
+  - email
+  - encrypted_password
+  - password_salt
+  - persistence_token
+  - created_at
+  - updated_at
+  - perishable_token
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - sign_in_count
+  - remember_token
+  - reset_password_token
+  - remember_created_at
+  records: 
+  - - "1"
+    - tony
+    - tony@halogenlabs.com
+    - $2a$10$FqcB0NYgZhIf7ryWdSj5sOnStXlKk8Gv24msWRxV1XzGSl5iO0KrK
+    - $2a$10$FqcB0NYgZhIf7ryWdSj5sO
+    - 
+    - 2011-03-26 16:30:13.197245
+    - 2011-03-26 16:30:13.408289
+    - 
+    - 2011-03-26 16:30:13.405639
+    - 2011-03-26 16:30:13.405639
+    - 146.57.249.81
+    - 146.57.249.81
+    - "1"
+    - 
+    - 
+    - 
+  - - "2"
+    - admin
+    - admin@example.com
+    - $2a$10$KAEdS7lFRhPaETSc9lKS0OojGXW2C.Ow3Lx5o6rbpnvKNIMAi/hOe
+    - $2a$10$KAEdS7lFRhPaETSc9lKS0O
+    - 
+    - 2011-03-26 16:36:32.91378
+    - 2011-03-26 16:36:51.902812
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - "3"
+    - mwagner72
+    - mwagner72@gmail.com
+    - $2a$10$HsMX8/FuJx4UqVM8zvsFf.PfBgXeggti8tttcCuzUpoKXjwsAHmnq
+    - $2a$10$HsMX8/FuJx4UqVM8zvsFf.
+    - 
+    - 2011-03-26 18:52:18.019389
+    - 2011-03-26 18:54:43.465977
+    - 
+    - 2011-03-26 18:54:21.907251
+    - 2011-03-26 18:54:21.907251
+    - 160.94.191.63
+    - 160.94.191.63
+    - "1"
+    - 
+    - 
+    - 
+  - - "4"
+    - nyourchuck
+    - nathan.yourchuck@gmail.com
+    - $2a$10$R3b7YxHxxeJdlQX.JlLNS.iFs/ah8uEIS1ZxWlcjmO0A1Goov5nXi
+    - $2a$10$R3b7YxHxxeJdlQX.JlLNS.
+    - 
+    - 2011-03-26 18:53:34.425664
+    - 2011-03-26 18:57:32.793104
+    - 
+    - 2011-03-26 18:55:09.989439
+    - 2011-03-26 18:55:09.989439
+    - 160.94.191.129
+    - 160.94.191.129
+    - "1"
+    - 
+    - 
+    - 
+  - - "5"
+    - wwilkins
+    - wwilkins@gmail.com
+    - $2a$10$4yUjMDWkkXYGl.g88ypDGeqBD1DuslpxTuRxFowdCe96ESTH0A5Hq
+    - $2a$10$4yUjMDWkkXYGl.g88ypDGe
+    - 
+    - 2011-03-26 19:12:40.603431
+    - 2011-03-26 19:13:20.810066
+    - 
+    - 2011-03-26 19:12:57.060668
+    - 2011-03-26 19:12:57.060668
+    - 160.94.191.129
+    - 160.94.191.129
+    - "1"
+    - i_NFSTrKFMAC5BVln7ri
+    - 
+    - 2011-03-26 19:12:57.045829

@@ -1,0 +1,68 @@
+
+--- 
+page_part_translations: 
+  columns: 
+  - id
+  - page_part_id
+  - locale
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - "1"
+    - en
+    - <p>Welcome to our site. This is just a place holder page while we gather our content.</p>
+    - 2011-03-26 16:37:25.311762
+    - 2011-03-26 16:37:25.311762
+  - - "2"
+    - "2"
+    - en
+    - <p>This is another block of content over here.</p>
+    - 2011-03-26 16:37:25.33454
+    - 2011-03-26 16:37:25.33454
+  - - "3"
+    - "3"
+    - en
+    - <h2>Sorry, there was a problem...</h2><p>The page you requested was not found.</p><p><a href='/'>Return to the home page</a></p>
+    - 2011-03-26 16:37:25.515034
+    - 2011-03-26 16:37:25.515034
+  - - "4"
+    - "4"
+    - en
+    - |-
+      <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero hendrerit dapibus.
+      
+      Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>
+    - 2011-03-26 16:37:25.584448
+    - 2011-03-26 16:37:25.584448
+  - - "5"
+    - "5"
+    - en
+    - <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla nisi a elit. Duis ultricies orci ut arcu. Ut ac nibh. Duis blandit rhoncus magna. Pellentesque semper risus ut magna. Etiam pulvinar tellus eget diam. Morbi blandit. Donec pulvinar mauris at ligula. Sed pellentesque, ipsum id congue molestie, lectus risus egestas pede, ac viverra diam lacus ac urna. Aenean elit.</p>
+    - 2011-03-26 16:37:25.624968
+    - 2011-03-26 16:37:25.624968
+  - - "6"
+    - "6"
+    - en
+    - 
+    - 2011-03-26 19:08:35.861046
+    - 2011-03-26 19:08:35.861046
+  - - "7"
+    - "7"
+    - en
+    - 
+    - 2011-03-26 19:08:35.871807
+    - 2011-03-26 19:08:35.871807
+  - - "8"
+    - "8"
+    - en
+    - 
+    - 2011-03-26 19:37:06.017415
+    - 2011-03-26 19:37:06.017415
+  - - "9"
+    - "9"
+    - en
+    - 
+    - 2011-03-26 19:37:06.02686
+    - 2011-03-26 19:37:06.02686

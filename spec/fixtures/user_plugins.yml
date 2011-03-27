@@ -1,0 +1,221 @@
+--- 
+user_plugins_036: 
+  position: "3"
+  name: refinery_pages
+  id: "67"
+  user_id: "5"
+user_plugins_025: 
+  position: "2"
+  name: refinery_images
+  id: "49"
+  user_id: "4"
+user_plugins_014: 
+  position: "3"
+  name: refinery_pages
+  id: "26"
+  user_id: "2"
+user_plugins_003: 
+  position: "2"
+  name: refinery_images
+  id: "9"
+  user_id: "1"
+user_plugins_037: 
+  position: "4"
+  name: payments
+  id: "68"
+  user_id: "5"
+user_plugins_026: 
+  position: "3"
+  name: refinery_pages
+  id: "50"
+  user_id: "4"
+user_plugins_015: 
+  position: "4"
+  name: refinery_settings
+  id: "27"
+  user_id: "2"
+user_plugins_004: 
+  position: "3"
+  name: refinery_pages
+  id: "10"
+  user_id: "1"
+user_plugins_038: 
+  position: "5"
+  name: refinery_settings
+  id: "69"
+  user_id: "5"
+user_plugins_027: 
+  position: "4"
+  name: refinery_settings
+  id: "51"
+  user_id: "4"
+user_plugins_016: 
+  position: "5"
+  name: refinery_users
+  id: "28"
+  user_id: "2"
+user_plugins_005: 
+  position: "4"
+  name: refinery_settings
+  id: "11"
+  user_id: "1"
+user_plugins_040: 
+  position: "11"
+  name: recipients
+  id: "71"
+  user_id: "1"
+user_plugins_039: 
+  position: "6"
+  name: refinery_users
+  id: "70"
+  user_id: "5"
+user_plugins_028: 
+  position: "5"
+  name: refinery_users
+  id: "52"
+  user_id: "4"
+user_plugins_017: 
+  position: "0"
+  name: refinery_dashboard
+  id: "41"
+  user_id: "3"
+user_plugins_006: 
+  position: "5"
+  name: refinery_users
+  id: "12"
+  user_id: "1"
+user_plugins_041: 
+  position: "7"
+  name: recipients
+  id: "72"
+  user_id: "2"
+user_plugins_030: 
+  position: "6"
+  name: payments
+  id: "54"
+  user_id: "2"
+user_plugins_029: 
+  position: "10"
+  name: payments
+  id: "53"
+  user_id: "1"
+user_plugins_018: 
+  position: "1"
+  name: refinery_files
+  id: "42"
+  user_id: "3"
+user_plugins_007: 
+  position: "6"
+  name: refinerycms_base
+  id: "13"
+  user_id: "1"
+user_plugins_042: 
+  position: "7"
+  name: recipients
+  id: "73"
+  user_id: "3"
+user_plugins_031: 
+  position: "6"
+  name: payments
+  id: "55"
+  user_id: "3"
+user_plugins_020: 
+  position: "3"
+  name: refinery_pages
+  id: "44"
+  user_id: "3"
+user_plugins_019: 
+  position: "2"
+  name: refinery_images
+  id: "43"
+  user_id: "3"
+user_plugins_008: 
+  position: "7"
+  name: refinery_core
+  id: "14"
+  user_id: "1"
+user_plugins_043: 
+  position: "7"
+  name: recipients
+  id: "74"
+  user_id: "4"
+user_plugins_032: 
+  position: "6"
+  name: payments
+  id: "56"
+  user_id: "4"
+user_plugins_021: 
+  position: "4"
+  name: refinery_settings
+  id: "45"
+  user_id: "3"
+user_plugins_010: 
+  position: "9"
+  name: refinery_generators
+  id: "16"
+  user_id: "1"
+user_plugins_009: 
+  position: "8"
+  name: refinery_dialogs
+  id: "15"
+  user_id: "1"
+user_plugins_044: 
+  position: "7"
+  name: recipients
+  id: "75"
+  user_id: "5"
+user_plugins_033: 
+  position: "0"
+  name: refinery_dashboard
+  id: "64"
+  user_id: "5"
+user_plugins_022: 
+  position: "5"
+  name: refinery_users
+  id: "46"
+  user_id: "3"
+user_plugins_011: 
+  position: "0"
+  name: refinery_dashboard
+  id: "23"
+  user_id: "2"
+user_plugins_034: 
+  position: "1"
+  name: refinery_files
+  id: "65"
+  user_id: "5"
+user_plugins_023: 
+  position: "0"
+  name: refinery_dashboard
+  id: "47"
+  user_id: "4"
+user_plugins_012: 
+  position: "1"
+  name: refinery_files
+  id: "24"
+  user_id: "2"
+user_plugins_001: 
+  position: "0"
+  name: refinery_dashboard
+  id: "7"
+  user_id: "1"
+user_plugins_035: 
+  position: "2"
+  name: refinery_images
+  id: "66"
+  user_id: "5"
+user_plugins_024: 
+  position: "1"
+  name: refinery_files
+  id: "48"
+  user_id: "4"
+user_plugins_013: 
+  position: "2"
+  name: refinery_images
+  id: "25"
+  user_id: "2"
+user_plugins_002: 
+  position: "1"
+  name: refinery_files
+  id: "8"
+  user_id: "1"

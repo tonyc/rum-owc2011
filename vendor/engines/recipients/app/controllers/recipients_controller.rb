@@ -20,7 +20,7 @@ class RecipientsController < ApplicationController
 protected
 
   def find_all_recipients
-    @recipients = Recipient.find(:all, :order => "position ASC")
+    @recipients = Recipient.active
   end
 
   def find_page

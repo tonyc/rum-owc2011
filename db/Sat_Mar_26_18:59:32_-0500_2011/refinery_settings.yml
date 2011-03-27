@@ -1,0 +1,194 @@
+
+--- 
+refinery_settings: 
+  columns: 
+  - id
+  - name
+  - value
+  - destroyable
+  - created_at
+  - updated_at
+  - scoping
+  - restricted
+  - callback_proc_as_string
+  - form_value_type
+  records: 
+  - - "1"
+    - dragonfly_secret
+    - |
+      --- 66c84f0e135c62089d06a8d40ad389bd396758b1ea1deec8
+
+    - true
+    - 2011-03-26 16:28:51.510871
+    - 2011-03-26 16:28:51.510871
+    - 
+    - false
+    - 
+    - text_area
+  - - "2"
+    - approximate_ascii
+    - |
+      --- "false"
+
+    - true
+    - 2011-03-26 16:28:52.059364
+    - 2011-03-26 16:28:52.059364
+    - pages
+    - false
+    - 
+    - text_area
+  - - "3"
+    - use_marketable_urls
+    - |
+      --- "true"
+
+    - true
+    - 2011-03-26 16:28:52.24146
+    - 2011-03-26 16:28:52.24146
+    - pages
+    - false
+    - 
+    - text_area
+  - - "4"
+    - site_name
+    - |
+      --- Company Name
+
+    - true
+    - 2011-03-26 16:29:31.23379
+    - 2011-03-26 16:29:31.23379
+    - 
+    - false
+    - 
+    - text_area
+  - - "5"
+    - use_google_ajax_libraries
+    - |
+      --- "false"
+
+    - true
+    - 2011-03-26 16:29:31.289397
+    - 2011-03-26 16:29:31.289397
+    - 
+    - false
+    - 
+    - text_area
+  - - "6"
+    - activity_show_limit
+    - |
+      --- 7
+
+    - true
+    - 2011-03-26 16:30:13.732222
+    - 2011-03-26 16:30:13.732222
+    - 
+    - false
+    - 
+    - text_area
+  - - "7"
+    - superuser_can_assign_roles
+    - |
+      --- "false"
+
+    - true
+    - 2011-03-26 16:30:48.473089
+    - 2011-03-26 16:30:48.473089
+    - 
+    - false
+    - 
+    - text_area
+  - - "8"
+    - page_title
+    - |
+      --- 
+      :page_title: 
+        :class: 
+        :tag: 
+        :wrap_if_not_chained: false
+      :chain_page_title: false
+      :ancestors: 
+        :class: ancestors
+        :separator: " | "
+        :tag: span
+
+    - true
+    - 2011-03-26 16:37:38.015181
+    - 2011-03-26 16:37:38.015181
+    - 
+    - false
+    - 
+    - text_area
+  - - "9"
+    - authenticity_token_on_frontend
+    - |
+      --- "true"
+
+    - true
+    - 2011-03-26 16:37:38.100157
+    - 2011-03-26 16:37:38.100157
+    - 
+    - false
+    - 
+    - text_area
+  - - "10"
+    - frontend_refinery_stylesheets_enabled
+    - |
+      --- "true"
+
+    - true
+    - 2011-03-26 16:37:38.226082
+    - 2011-03-26 16:37:38.226082
+    - 
+    - false
+    - 
+    - text_area
+  - - "11"
+    - menu_hide_children
+    - |
+      --- "false"
+
+    - true
+    - 2011-03-26 16:37:38.258862
+    - 2011-03-26 16:37:38.258862
+    - 
+    - false
+    - 
+    - text_area
+  - - "12"
+    - analytics_page_code
+    - |
+      --- UA-xxxxxx-x
+
+    - true
+    - 2011-03-26 18:13:20.107433
+    - 2011-03-26 18:13:20.107433
+    - 
+    - false
+    - 
+    - text_area
+  - - "13"
+    - default_page_parts
+    - |
+      --- 
+      - Body
+      - Side Body
+
+    - true
+    - 2011-03-26 19:08:35.829805
+    - 2011-03-26 19:08:35.829805
+    - 
+    - false
+    - 
+    - text_area
+  - - "14"
+    - use_resource_caching
+    - |
+      --- "true"
+
+    - true
+    - 2011-03-26 19:39:04.524613
+    - 2011-03-26 19:39:04.524613
+    - 
+    - false
+    - 
+    - text_area

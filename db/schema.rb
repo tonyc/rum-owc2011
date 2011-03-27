@@ -10,11 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20110326204438) do
-=======
-ActiveRecord::Schema.define(:version => 20110326185847) do
->>>>>>> 104dc64734c51e32a8b66333f21489943d22de2f
 
   create_table "campaigns", :force => true do |t|
     t.string   "name"
@@ -145,10 +141,7 @@ ActiveRecord::Schema.define(:version => 20110326185847) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
     t.boolean  "active"
-=======
->>>>>>> 104dc64734c51e32a8b66333f21489943d22de2f
   end
 
   add_index "recipients", ["id"], :name => "index_recipients_on_id"

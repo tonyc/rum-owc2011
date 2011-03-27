@@ -7,4 +7,7 @@ class Recipient < ActiveRecord::Base
   has_many :payments
 
   belongs_to :image
+  
+  scope :active, :conditions => ["active = true"], :order => "position ASC"
+  
 end

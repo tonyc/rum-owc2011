@@ -1,0 +1,9 @@
+--- 
+payments_001: 
+  position: "0"
+  created_at: 2011-03-26 20:00:38.55787
+  updated_at: 2011-03-26 20:00:38.55787
+  transaction_id: "44"
+  amount: "500"
+  recipient_id: "0"
+  id: "1"

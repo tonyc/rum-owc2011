@@ -1,0 +1,19 @@
+
+--- 
+payments: 
+  columns: 
+  - id
+  - amount
+  - recipient_id
+  - transaction_id
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - "500"
+    - "0"
+    - "44"
+    - "0"
+    - 2011-03-26 20:00:38.55787
+    - 2011-03-26 20:00:38.55787

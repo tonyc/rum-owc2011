@@ -1,0 +1,91 @@
+--- 
+users_004: 
+  encrypted_password: $2a$10$R3b7YxHxxeJdlQX.JlLNS.iFs/ah8uEIS1ZxWlcjmO0A1Goov5nXi
+  created_at: 2011-03-26 18:53:34.425664
+  last_sign_in_ip: 160.94.191.129
+  perishable_token: 
+  updated_at: 2011-03-26 18:57:32.793104
+  last_sign_in_at: 2011-03-26 18:55:09.989439
+  username: nyourchuck
+  sign_in_count: "1"
+  id: "4"
+  password_salt: $2a$10$R3b7YxHxxeJdlQX.JlLNS.
+  reset_password_token: 
+  remember_token: 
+  current_sign_in_ip: 160.94.191.129
+  persistence_token: 
+  remember_created_at: 
+  current_sign_in_at: 2011-03-26 18:55:09.989439
+  email: nathan.yourchuck@gmail.com
+users_005: 
+  encrypted_password: $2a$10$4yUjMDWkkXYGl.g88ypDGeqBD1DuslpxTuRxFowdCe96ESTH0A5Hq
+  created_at: 2011-03-26 19:12:40.603431
+  last_sign_in_ip: 160.94.191.129
+  perishable_token: 
+  updated_at: 2011-03-26 19:13:20.810066
+  last_sign_in_at: 2011-03-26 19:12:57.060668
+  username: wwilkins
+  sign_in_count: "1"
+  id: "5"
+  password_salt: $2a$10$4yUjMDWkkXYGl.g88ypDGe
+  reset_password_token: 
+  remember_token: i_NFSTrKFMAC5BVln7ri
+  current_sign_in_ip: 160.94.191.129
+  persistence_token: 
+  remember_created_at: 2011-03-26 19:12:57.045829
+  current_sign_in_at: 2011-03-26 19:12:57.060668
+  email: wwilkins@gmail.com
+users_001: 
+  encrypted_password: $2a$10$FqcB0NYgZhIf7ryWdSj5sOnStXlKk8Gv24msWRxV1XzGSl5iO0KrK
+  created_at: 2011-03-26 16:30:13.197245
+  last_sign_in_ip: 146.57.249.81
+  perishable_token: 
+  updated_at: 2011-03-26 16:30:13.408289
+  last_sign_in_at: 2011-03-26 16:30:13.405639
+  username: tony
+  sign_in_count: "1"
+  id: "1"
+  password_salt: $2a$10$FqcB0NYgZhIf7ryWdSj5sO
+  reset_password_token: 
+  remember_token: 
+  current_sign_in_ip: 146.57.249.81
+  persistence_token: 
+  remember_created_at: 
+  current_sign_in_at: 2011-03-26 16:30:13.405639
+  email: tony@halogenlabs.com
+users_002: 
+  encrypted_password: $2a$10$KAEdS7lFRhPaETSc9lKS0OojGXW2C.Ow3Lx5o6rbpnvKNIMAi/hOe
+  created_at: 2011-03-26 16:36:32.91378
+  last_sign_in_ip: 
+  perishable_token: 
+  updated_at: 2011-03-26 16:36:51.902812
+  last_sign_in_at: 
+  username: admin
+  sign_in_count: 
+  id: "2"
+  password_salt: $2a$10$KAEdS7lFRhPaETSc9lKS0O
+  reset_password_token: 
+  remember_token: 
+  current_sign_in_ip: 
+  persistence_token: 
+  remember_created_at: 
+  current_sign_in_at: 
+  email: admin@example.com
+users_003: 
+  encrypted_password: $2a$10$HsMX8/FuJx4UqVM8zvsFf.PfBgXeggti8tttcCuzUpoKXjwsAHmnq
+  created_at: 2011-03-26 18:52:18.019389
+  last_sign_in_ip: 160.94.191.63
+  perishable_token: 
+  updated_at: 2011-03-26 18:54:43.465977
+  last_sign_in_at: 2011-03-26 18:54:21.907251
+  username: mwagner72
+  sign_in_count: "1"
+  id: "3"
+  password_salt: $2a$10$HsMX8/FuJx4UqVM8zvsFf.
+  reset_password_token: 
+  remember_token: 
+  current_sign_in_ip: 160.94.191.63
+  persistence_token: 
+  remember_created_at: 
+  current_sign_in_at: 2011-03-26 18:54:21.907251
+  email: mwagner72@gmail.com

@@ -1,0 +1,40 @@
+
+--- 
+recipients: 
+  columns: 
+  - id
+  - name
+  - story
+  - year
+  - image_id
+  - amount_needed
+  - amount_received
+  - position
+  - created_at
+  - updated_at
+  - active
+  records: 
+  - - "1"
+    - Fred
+    - <p>Fred likes pie &lt;p&gt;YO!!&lt;/p&gt;</p>
+    - "2011"
+    - 
+    - "20000"
+    - "5000"
+    - "0"
+    - 2011-03-26 19:41:03.398041
+    - 2011-03-26 20:58:46.001711
+    - true
+  - - "2"
+    - Jill
+    - |-
+      <p>Jill needs a new van</p>
+      <br />
+    - "2011"
+    - 
+    - "35000"
+    - "3000"
+    - "1"
+    - 2011-03-26 19:41:29.007085
+    - 2011-03-26 19:41:29.007085
+    - false
