@@ -1,0 +1,21 @@
+.button {
+  background: #95c659;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  padding: 5px 10px;
+  @include linear-gradient(color-stops(#95c659, #678041));
+  @include border-radius();
+  @include text-shadow();
+  @include box-shadow(#666, 1px, 1px, 3px);
+
+  &:hover {
+    background: #000;
+  }
+  
+  &:active {
+    @include linear-gradient(color-stops(#000, lighten(#000, 30%)));
+  }
+}
+
