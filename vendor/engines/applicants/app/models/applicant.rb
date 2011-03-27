@@ -24,7 +24,7 @@ class Applicant < ActiveRecord::Base
                       :with => /^[A-Z0-9._%-]+@([A-z0-9-]+\.)+[A-Z]{2,4}$/i,
                       :message => "must be a valid email address"
 
-  validates_acceptance_of :agree_terms, :message => "You must Agree to the Terms", :unless => :agree_terms
+ # validates_acceptance_of :agree_terms, :message => "You must Agree to the Terms", :unless => :agree_terms
 
   def clean_notes
     for note in notes
@@ -39,11 +39,11 @@ class Applicant < ActiveRecord::Base
     Applicant.where('name=?', "%#{name}%")
   end
 
-  def activate_campaign
+  def activate_campaign(id)
     if self.campaign
       raise "Applicant '#{id}' already has campaign"
     else
-      campaign = Campaign.new(:applicant => self, :name => self.name, :status => "new")
+      campaign = Campaign.new(:applicant_id => id, :name => self.name, :status => "new")
       return campaign.save
     end
   end

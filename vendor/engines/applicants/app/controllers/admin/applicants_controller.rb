@@ -27,7 +27,7 @@ module Admin
 
     def activate_campaign
       @applicant = Applicant.find(params[:id])
-      if @applicant.activate_campaign
+      if @applicant.activate_campaign(@applicant.id)
         flash[:success] = "Campaign Activated"
         redirect_to admin_applicants_path
       else
