@@ -8,10 +8,7 @@
 
 <% content_for :body_content_left do %>
   <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @campaign.name %>
-    </p>
+    <h1><%= raw @campaign.name %></h1>
   </section>
 
   <% if @campaign.success_story.blank? %>

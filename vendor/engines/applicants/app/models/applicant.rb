@@ -35,6 +35,10 @@ class Applicant < ActiveRecord::Base
 
   end
 
+  def self.matching_name(name)
+    Applicant.where('name=?', "%#{name}%")
+  end
+
   def activate_campaign
     if self.campaign
       raise "Applicant '#{id}' already has campaign"

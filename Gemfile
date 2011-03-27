@@ -37,6 +37,8 @@ gem 'pg'
 gem "compass", ">= 0.10.6"
 gem 'aws-s3'
 
+gem 'will_paginate', '3.0.pre2'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -63,4 +65,5 @@ gem 'aws-s3'
 gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-applicants', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-campaigns', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-contacts', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-products', '1.0', :path => 'vendor/engines'

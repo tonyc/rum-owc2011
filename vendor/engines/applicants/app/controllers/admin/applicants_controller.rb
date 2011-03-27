@@ -8,7 +8,10 @@ module Admin
       search_all_applicants if searching?
       paginate_all_applicants
 
-      render :partial => 'applicants' if request.xhr?
+      respond_to do |format|
+        format.html
+        format.js 
+      end
     end
 
     def edit
@@ -54,6 +57,16 @@ module Admin
         flash[:alert] = "Failed to Update"
         render 'edit'
       end
+    end
+
+    protected
+    def searching?
+      params[:term] || super()
+    end
+
+    def search_all_applicants
+      arg = "%#{params[:search] || params[:term]}%"
+      @applicants = Applicant.where('name like ? OR email like ?', arg, arg)
     end
   end
 end

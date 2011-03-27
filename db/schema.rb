@@ -77,10 +77,13 @@ ActiveRecord::Schema.define(:version => 20110327083706) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
+    t.string   "email_address"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email_address"
   end
+
+  add_index "contacts", ["id"], :name => "index_contacts_on_id"
 
   create_table "donation_tags", :force => true do |t|
     t.integer "contact_id"
@@ -131,10 +134,10 @@ ActiveRecord::Schema.define(:version => 20110327083706) do
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
     t.string   "locale"
-    t.string   "meta_keywords"
-    t.text     "meta_description"
     t.string   "browser_title"
     t.string   "title"
+    t.string   "meta_keywords"
+    t.text     "meta_description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

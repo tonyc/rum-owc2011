@@ -1,0 +1,43 @@
+h1#body_content_title {
+  display: block;
+  width: 680px;
+  background-color: #78AC54;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 20px;
+  color: #FFF;
+  @include border-radius();
+}
+#body .no_body_content_right h1#body_content_title {
+  width: auto;
+}
+
+#body_content_left,
+#body_content_right {
+  float: left;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 21px;
+}
+#body_content_left { 
+  width: 680px;
+}
+#body_content.no_body_content_left #body_content_right, 
+#body_content.no_body_content_right #body_content_left {
+  width: auto;
+  padding: 20px;
+}
+#body_content.no_body_content_left #body_content_right .inner, 
+#body_content.no_body_content_right #body_content_left .inner {
+  padding-right: 0;
+}
+#body_content_right {
+  width: 180px;
+  margin: -40px 0 0 20px;
+  background-color: #E8E8EA;
+  @include border-radius();
+}
+
+#body_content_left .inner p {
+  margin: 1em 0;
+}
