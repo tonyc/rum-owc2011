@@ -9,6 +9,7 @@ db/*.sqlite3
 db/*.sqlite3-journal
 *.log
 tmp/**/*
+config/s3.yml
 
 # Documentation
 doc/api

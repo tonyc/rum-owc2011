@@ -22,4 +22,14 @@ class Campaign < ActiveRecord::Base
     payments.inject(0) { |sum, payment| sum = sum + payment.amount }
   end
   
+  def images
+    [
+      before_image_1,
+      before_image_2,
+      after_image_1,
+      after_image_2,
+      after_image_3
+    ].compact
+  end
+  
 end

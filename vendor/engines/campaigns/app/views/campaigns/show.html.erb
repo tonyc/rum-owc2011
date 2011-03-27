@@ -2,6 +2,10 @@
   <%= @campaign.name %>
 <% end %>
 
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "coin-slider.js", "campaigns.js" %>
+<% end %>
+
 <% content_for :body_content_left do %>
   <section>
     <h1>Name</h1>
@@ -21,48 +25,10 @@
       <%=raw @campaign.year %>
     </p>
   </section>
-  <section>
-    <h1>Before Image 1</h1>
-    <p>
-      <%= image_fu @campaign.before_image_1, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Before Image 2</h1>
-    <p>
-      <%= image_fu @campaign.before_image_2, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>After Image 1</h1>
-    <p>
-      <%= image_fu @campaign.after_image_1, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>After Image 2</h1>
-    <p>
-      <%= image_fu @campaign.after_image_2, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>After Image 3</h1>
-    <p>
-      <%= image_fu @campaign.after_image_3, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Target Level</h1>
-    <p>
-      <%=raw @campaign.target_level %>
-    </p>
-  </section>
-  <section>
-    <h1>Status</h1>
-    <p>
-      <%=raw @campaign.status %>
-    </p>
-  </section>
+
+  <div id="coin-slider">
+    <%= render :partial => "image", :collection => @campaign.images %>
+  </div>
 <% end %>
 
 <% content_for :body_content_right do %>
