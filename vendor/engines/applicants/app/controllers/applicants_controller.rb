@@ -22,11 +22,12 @@ class ApplicantsController < ApplicationController
   end
 
   def create
-    @applicant - Applicant.new(params[:applicant])
+    @applicant = Applicant.new(params[:applicant])
     if @applicant.save
-
+      flash[:success] = "Application Submitted"
+      redirect_to applicants_path
     else 
-
+      render 'new'
     end
   end
 protected

@@ -1,4 +1,7 @@
 <% content_for :body_content_left do %>
+  
+  <%= link_to "Click Here to fill out online Application", new_applicant_path %>
+  
   <ul id="applicants">
     <% @applicants.each do |applicant| %>
       <li>

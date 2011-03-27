@@ -1,5 +1,5 @@
-<%= form_for [:admin, @applicant] do |f| -%>
-  <%= render :partial => "/shared/admin/error_messages", :locals => {
+<%= form_for [ @applicant] do |f| -%>
+  <%= render :partial => "/shared/error_messages", :locals => {
           :object => @applicant,
           :include_object_name => true
         } %>
@@ -131,14 +131,7 @@
   <div class='field'>
     <%= f.text_area :willing_participate -%>
   </div>
-  
-  <%= render :partial => "/shared/admin/form_actions",
-              :locals => {
-                :f => f,
-                :continue_editing => false,
-                :delete_title => t('delete', :scope => 'admin.applicants.applicant'),
-                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @applicant.name)
-              } %>
+  <%= f.submit "Submit Application" %> <%= link_to "Cancel", root_path %>
 <% end -%>
 <% content_for :javascripts do %>
   <script>
