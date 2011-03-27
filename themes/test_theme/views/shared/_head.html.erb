@@ -25,6 +25,7 @@
   <%= csrf_meta_tag if RefinerySetting.find_or_set(:authenticity_token_on_frontend, true)-%>
   <%= yield :meta %>
 
+  <%= stylesheet_link_tag "reset", :theme => theme %>
   <%= stylesheet_link_tag stylesheets_for_head(stylesheets||=%w(application formatting theme), theme ||= false),
                           :cache => ("cache/application" if Rails.root.writable? and
                                                             RefinerySetting.find_or_set(:use_resource_caching, true) and
@@ -34,6 +35,7 @@
   <%= yield :stylesheets %>
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js' %>
   <%= javascript_include_tag 'modernizr-min' %>
 
   <% #TODO: REMOVE yielded_head and yielded_head_libraries and deprecation notice 0.9.9 <=> 1.0 %>

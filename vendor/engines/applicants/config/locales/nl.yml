@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    applicants:
+      title: Applicants
+  admin:
+    applicants:
+      index:
+        title: Applicants
+        create_new: Maak een nieuwe Applicant
+        reorder: Wijzig de volgorde van de Applicants
+        reorder_done: Klaar met het wijzingen van de volgorde van de Applicants
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Applicants. Druk op 'Maak een nieuwe Applicant' om de eerste aan te maken.
+      applicant:
+        view_live_html: Bekijk deze applicant op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze applicant
+        delete: Verwijder deze applicant voor eeuwig
+  applicants:
+    show:
+      other: Andere Applicants

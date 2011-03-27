@@ -1,0 +1,159 @@
+<% content_for :body_content_title do %>
+  <%= @applicant.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @applicant.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone</h1>
+    <p>
+      <%=raw @applicant.phone %>
+    </p>
+  </section>
+  <section>
+    <h1>Address</h1>
+    <p>
+      <%=raw @applicant.address %>
+    </p>
+  </section>
+  <section>
+    <h1>City</h1>
+    <p>
+      <%=raw @applicant.city %>
+    </p>
+  </section>
+  <section>
+    <h1>State</h1>
+    <p>
+      <%=raw @applicant.state %>
+    </p>
+  </section>
+  <section>
+    <h1>Zip</h1>
+    <p>
+      <%=raw @applicant.zip %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @applicant.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Race</h1>
+    <p>
+      <%=raw @applicant.race %>
+    </p>
+  </section>
+  <section>
+    <h1>Dob</h1>
+    <p>
+      <%=raw @applicant.dob %>
+    </p>
+  </section>
+  <section>
+    <h1>Weight</h1>
+    <p>
+      <%=raw @applicant.weight %>
+    </p>
+  </section>
+  <section>
+    <h1>Height</h1>
+    <p>
+      <%=raw @applicant.height %>
+    </p>
+  </section>
+  <section>
+    <h1>Education</h1>
+    <p>
+      <%=raw @applicant.education %>
+    </p>
+  </section>
+  <section>
+    <h1>Military Service</h1>
+    <p>
+      <%=raw @applicant.military_service %>
+    </p>
+  </section>
+  <section>
+    <h1>Occupation</h1>
+    <p>
+      <%=raw @applicant.occupation %>
+    </p>
+  </section>
+  <section>
+    <h1>Guardian</h1>
+    <p>
+      <%=raw @applicant.guardian %>
+    </p>
+  </section>
+  <section>
+    <h1>Guardian Address</h1>
+    <p>
+      <%=raw @applicant.guardian_address %>
+    </p>
+  </section>
+  <section>
+    <h1>Guardian City</h1>
+    <p>
+      <%=raw @applicant.guardian_city %>
+    </p>
+  </section>
+  <section>
+    <h1>Guardian State</h1>
+    <p>
+      <%=raw @applicant.guardian_state %>
+    </p>
+  </section>
+  <section>
+    <h1>Guardian Zip</h1>
+    <p>
+      <%=raw @applicant.guardian_zip %>
+    </p>
+  </section>
+  <section>
+    <h1>Guardian Phone</h1>
+    <p>
+      <%=raw @applicant.guardian_phone %>
+    </p>
+  </section>
+  <section>
+    <h1>Matching Funds</h1>
+    <p>
+      <%=raw @applicant.matching_funds %>
+    </p>
+  </section>
+  <section>
+    <h1>Orgainized Fundraiser</h1>
+    <p>
+      <%=raw @applicant.orgainized_fundraiser %>
+    </p>
+  </section>
+  <section>
+    <h1>Willing Participate</h1>
+    <p>
+      <%=raw @applicant.willing_participate %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="applicants">
+      <% @applicants.each do |applicant| %>
+        <li>
+          <%= link_to applicant.name, applicant_url(applicant) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

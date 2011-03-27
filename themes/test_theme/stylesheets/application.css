@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+    Override default refinery application CSS below.
+    Formatting applies to all frontend.
+*/
+/* line 8, sass/application.scss */
+.sass_test div {
+  width: auto;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+}
+/* line 12, sass/application.scss */
+.sass_test div a {
+  text-decoration: none;
+}

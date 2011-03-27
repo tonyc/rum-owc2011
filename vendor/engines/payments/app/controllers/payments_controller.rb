@@ -22,7 +22,7 @@ class PaymentsController < ApplicationController
     @payment = Payment.new(
       :transaction_amount => params[:transactionAmount],
       :transaction_id     => params[:transactionId],
-      :recipient => Recipient.find(params[:referenceid])
+      :recipient => Recipient.find(params[:referenceId])
     )
     if @payment.save
       redirect_to(@payment, :notice => 'Payment was successfully created.')

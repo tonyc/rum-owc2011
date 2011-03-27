@@ -47,6 +47,7 @@ GIT
 PATH
   remote: vendor/engines
   specs:
+    refinerycms-applicants (1.0)
     refinerycms-payments (1.0)
     refinerycms-recipients (1.0)
 
@@ -251,6 +252,7 @@ DEPENDENCIES
   pg
   rails (= 3.0.5)
   refinerycms!
+  refinerycms-applicants (= 1.0)!
   refinerycms-payments (= 1.0)!
   refinerycms-recipients (= 1.0)!
   refinerycms-theming (= 1.0.0)

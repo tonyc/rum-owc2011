@@ -10,8 +10,15 @@
   </div>
   
   <div class='field'>
-    <%= f.label :recipient_id -%>
-    <%= f.text_field :recipient_id -%>
+    <%= f.label "Recipient" -%>
+    <% unless @payment.new_record? %>
+      <%= @payment.recipient.name %>
+    <% else %>
+      <% @recipients.each do |recipient| %>
+        <%= f.radio_button :recipient_id, recipient.id %><%= recipient.name %>
+        <br>
+      <% end %>
+    <% end %>
   </div>
   
   <div class='field'>
