@@ -1,6 +1,6 @@
 module Admin
   class PaymentsController < Admin::BaseController
-
+    before_filter :find_campaigns
     crudify :payment,
             :title_attribute => 'transaction_id'
 
@@ -13,7 +13,12 @@ module Admin
 
     def new
       @payment = Payment.new
-      @recipients = Recipient.isactive
+    end
+    
+    protected
+    
+    def find_campaigns
+      @campaigns = Campaign.active
     end
 
     def contact_ajax

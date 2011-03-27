@@ -10,12 +10,12 @@
   </div>
   
   <div class='field'>
-    <%= f.label "Recipient" -%>
+    <%= f.label "Campaign" -%>
     <% unless @payment.new_record? %>
-      <%= @payment.recipient.name %>
+      <%= @payment.campaign.name %>
     <% else %>
-      <% @recipients.each do |recipient| %>
-        <%= f.radio_button :recipient_id, recipient.id %><%= recipient.name %>
+      <% @campaigns.each do |campaign| %>
+        <%= f.radio_button :campaign_id, campaign.id %><%= campaign.name %>
         <br>
       <% end %>
     <% end %>

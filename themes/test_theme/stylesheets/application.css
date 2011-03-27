@@ -288,18 +288,19 @@ a.button {
 #footer .footer-top .shop .detail {
   background: url(/images/shop-brackets.png) 0 0 no-repeat;
   display: block;
+  font-size: 13px;
   float: right;
   height: 77px;
   position: relative;
   top: -8px;
   width: 185px;
 }
-/* line 84, sass/_footer.scss */
+/* line 85, sass/_footer.scss */
 #footer .footer-top .shop .detail span {
   display: block;
   margin: 11px 17px 0 20px;
 }
-/* line 92, sass/_footer.scss */
+/* line 93, sass/_footer.scss */
 #footer .footer-bottom {
   background: #3f3f3f;
   clear: both;
@@ -313,27 +314,27 @@ a.button {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 100, sass/_footer.scss */
+/* line 101, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links {
   float: right;
   width: 500px;
   text-align: right;
 }
-/* line 105, sass/_footer.scss */
+/* line 106, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li {
   display: inline;
 }
-/* line 107, sass/_footer.scss */
+/* line 108, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li a {
   color: #e9e8ea;
   text-decoration: none;
 }
-/* line 111, sass/_footer.scss */
+/* line 112, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li a:after {
   content: "|";
   padding: 10px;
 }
-/* line 117, sass/_footer.scss */
+/* line 118, sass/_footer.scss */
 #footer .footer-bottom ol.footer-links li:last-child a:after {
   content: "";
   padding: 0;

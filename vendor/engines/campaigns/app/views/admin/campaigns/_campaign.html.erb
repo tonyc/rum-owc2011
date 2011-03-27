@@ -2,7 +2,8 @@
   <span class='title'>
     <%= campaign.name %>: <%= campaign.year %> &nbsp;&nbsp;&nbsp; <%= active_tag(campaign.active?) %><br/>
     Amount needed: <%= number_to_currency(campaign.target_level, :unit => '$') %><br/>
-    <%= campaign.success_story.html_safe %>
+    Amount received: <%= number_to_currency(campaign.payment_total, :unit => '$') %><br/>
+    <%= campaign.success_story.html_safe rescue '' %>
     <span class="preview">&nbsp;</span>
   </span>
   <span class='actions'>

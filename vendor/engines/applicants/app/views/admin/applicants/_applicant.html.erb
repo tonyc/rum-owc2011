@@ -1,9 +1,18 @@
 <li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(applicant) -%>">
-  <span class='title'>
-    <%= applicant.name %> -- status: <%= applicant.status %>
-    <span class="preview">&nbsp;</span>
-  </span>
+  <div class='title'>
+    <%= applicant.name %>
+    <span class="preview">&nbsp;&nbsp;status: <%= applicant.status %></span>
+    <br/>Applied <%= applicant.created_at.to_s(:mdY) %>
+    <div>
+      <% if applicant.campaign %>
+        <%= link_to "view campaign", edit_admin_campaign_path(applicant.campaign) %>
+      <% else %>
+        <%= link_to "create campaign", activate_campaign_admin_applicant_url(applicant) %>
+      <% end %>
+    </div>
+  </div>
   <span class='actions'>
+    
     <%= link_to refinery_icon_tag("application_go.png"), applicant_url(applicant),
         :title => t('.view_live_html'),
         :target => "_blank" %>

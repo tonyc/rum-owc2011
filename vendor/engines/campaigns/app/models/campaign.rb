@@ -13,6 +13,7 @@ class Campaign < ActiveRecord::Base
   
   has_many :payments
   has_and_belongs_to_many :contacts
+  belongs_to :applicant
 
   def payment_total
     sum = 0.00 + 0.00

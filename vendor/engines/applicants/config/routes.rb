@@ -6,6 +6,9 @@ Refinery::Application.routes.draw do
       collection do
         post :update_positions
       end
+      member do
+        get :activate_campaign
+      end
     end
   end
 end

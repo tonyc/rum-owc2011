@@ -2,6 +2,7 @@ class PagesController < ApplicationController
 
   # This action is usually accessed with the root path, normally '/'
   def home
+    @random_product = Product.random
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
     render :layout => "home"
   end
