@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20110327041057) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "status"
   end
 
   add_index "applicants", ["id"], :name => "index_applicants_on_id"
@@ -96,6 +97,13 @@ ActiveRecord::Schema.define(:version => 20110327041057) do
     t.datetime "updated_at"
     t.string   "image_uid"
     t.string   "image_ext"
+  end
+
+  create_table "notes", :force => true do |t|
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "applicant_id"
   end
 
   create_table "page_part_translations", :force => true do |t|

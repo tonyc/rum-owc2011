@@ -1,8 +1,90 @@
 @charset "UTF-8";
-/*
-    Override default refinery application CSS below.
-    Formatting applies to all frontend.
-*/
+/* line 1, sass/_donate_runner.scss */
+.donate-runner {
+  background: url(/images/runner-bkgd.png) 0 0 repeat-x;
+  height: 29px;
+}
+/* line 5, sass/_donate_runner.scss */
+.donate-runner .link-wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+/* line 9, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a {
+  background: url(/images/donate-runner.png) 0 0 no-repeat;
+  color: transparent;
+  display: block;
+  float: right;
+  height: 48px;
+  position: relative;
+  top: 2px;
+  width: 158px;
+}
+/* line 19, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a:hover {
+  background-position: -316px 0;
+}
+/* line 22, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a:active {
+  background-position: -158px 0;
+}
+
+/* line 1, sass/_header.scss */
+#header {
+  overflow: hidden;
+  width: 100%;
+}
+/* line 5, sass/_header.scss */
+#header h1#logo {
+  float: left;
+  height: 178px;
+  width: 96px;
+}
+/* line 11, sass/_header.scss */
+#header nav#menu {
+  color: #969696;
+  float: right;
+  font-size: 18px;
+  position: relative;
+  top: 40px;
+}
+/* line 19, sass/_header.scss */
+#header nav#menu ul li {
+  margin: 0;
+  padding: 0;
+}
+/* line 22, sass/_header.scss */
+#header nav#menu ul li a {
+  font-weight: normal;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+/* line 27, sass/_header.scss */
+#header nav#menu ul li a:link {
+  color: #969696;
+}
+/* line 30, sass/_header.scss */
+#header nav#menu ul li a:visited {
+  color: #969696;
+}
+/* line 33, sass/_header.scss */
+#header nav#menu ul li a:hover {
+  color: #000;
+}
+/* line 38, sass/_header.scss */
+#header nav#menu ul li:after {
+  content: "|";
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: -2px;
+}
+/* line 47, sass/_header.scss */
+#header nav#menu ul li:last-child:after {
+  content: "";
+}
+
 /*
 	Coin Slider jQuery plugin CSS styles
 	http://workshop.rs/projects/coin-slider

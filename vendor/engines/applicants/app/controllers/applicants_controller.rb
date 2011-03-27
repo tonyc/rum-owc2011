@@ -25,6 +25,8 @@ class ApplicantsController < ApplicationController
     @applicant = Applicant.new(params[:applicant])
     if @applicant.save
       flash[:success] = "Application Submitted"
+      ApplicationMailer.application_notification(@applicant).deliver
+      ApplicationMailer.application_confirmation(@applicant).deliver
       redirect_to applicants_path
     else 
       render 'new'
