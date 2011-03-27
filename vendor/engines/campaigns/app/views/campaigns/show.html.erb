@@ -13,18 +13,25 @@
       <%=raw @campaign.name %>
     </p>
   </section>
-  <section>
-    <h1>Success Story</h1>
-    <p>
-      <%=raw @campaign.success_story %>
-    </p>
-  </section>
-  <section>
-    <h1>Year</h1>
-    <p>
-      <%=raw @campaign.year %>
-    </p>
-  </section>
+
+  <% if @campaign.success_story.blank? %>
+    <%= raw progress_thermometer(@campaign) %>
+  <% else %>
+      <section>
+        <h1>Success Story</h1>
+        <p>
+          <%=raw @campaign.success_story %>
+        </p>
+      </section>
+  <% end %>
+  <% unless @campaign.year.blank? %>
+    <section>
+      <h1>Year</h1>
+      <p>
+        <%=raw @campaign.year %>
+      </p>
+    </section>
+  <% end %>
   
   <% if @campaign.images.present? %>
   <div id="coin-slider">
