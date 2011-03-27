@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="applicants">
+    <% @applicants.each do |applicant| %>
+      <li>
+        <%= link_to applicant.name, applicant_url(applicant) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
