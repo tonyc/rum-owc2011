@@ -82,7 +82,7 @@ a.button {
 /* line 1, sass/_header.scss */
 #header {
   margin-bottom: 10px;
-  height: 50px;
+  overflow: hidden;
   width: 100%;
 }
 /* line 6, sass/_header.scss */
@@ -96,34 +96,34 @@ a.button {
   color: #969696;
   float: right;
   font-size: 18px;
-  margin-top: 10px;
+  position: relative;
   top: 40px;
-  height: 50px;
+  width: 780px;
 }
-/* line 20, sass/_header.scss */
+/* line 21, sass/_header.scss */
 #header nav#menu ul li {
   margin: 0;
   padding: 0;
 }
-/* line 23, sass/_header.scss */
+/* line 24, sass/_header.scss */
 #header nav#menu ul li a {
   font-weight: normal;
   padding: 5px 14px;
   text-decoration: none;
 }
-/* line 28, sass/_header.scss */
+/* line 29, sass/_header.scss */
 #header nav#menu ul li a:link {
   color: #969696;
 }
-/* line 31, sass/_header.scss */
+/* line 32, sass/_header.scss */
 #header nav#menu ul li a:visited {
   color: #969696;
 }
-/* line 34, sass/_header.scss */
+/* line 35, sass/_header.scss */
 #header nav#menu ul li a:hover {
   color: #000;
 }
-/* line 39, sass/_header.scss */
+/* line 40, sass/_header.scss */
 #header nav#menu ul li:after {
   content: "|";
   color: #000;
@@ -132,7 +132,7 @@ a.button {
   position: relative;
   top: -2px;
 }
-/* line 48, sass/_header.scss */
+/* line 49, sass/_header.scss */
 #header nav#menu ul li:last-child:after {
   content: "";
 }

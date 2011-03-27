@@ -1,16 +1,11 @@
-<div style="float: left; width: 200px;">
 <h1 id='logo'>
   <% link_to root_path do %>
     <%= image_tag "logo.png", :height => "96", :width => "178", :alt => "Mobility for Independence" %>
   <% end %>
 </h1>
-</div>
-
-<div style="float: right; width: 700px;">
 
 <%= render :partial => "/shared/menu",
            :locals => {
              :dom_id => 'menu',
              :css => 'menu'
            } -%>
-</div>
