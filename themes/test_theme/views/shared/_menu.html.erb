@@ -3,8 +3,10 @@
   css ||= 'menu'
   hide_children = RefinerySetting.find_or_set(:menu_hide_children, false) if hide_children.nil?
   # Select top menu items unless 'roots' is supplied.
-  collection ||= @menu_pages.includes(:slugs)
+  collection ||= top_level_pages_without_home
+  puts "COLLECTION: #{collection.inspect}"
   if (roots ||= collection.select{|p| p.parent_id.nil?}).present?
+    puts "HERE"
     # In order to match items that aren't shown in menu and highlight their associations.
     # This can be supplied if the logic different in your case.
     unless defined?(selected_item)
@@ -13,7 +15,7 @@
     end
     sibling_count = roots.length - 1
 -%>
-    <nav id='<%= dom_id %>' class='<%= %W(#{css} clearfix).join(' ') %>'>
+    <nav id='<%= dom_id %>' class='<%= %W(#{css}).join(' ') %>'>
       <ul>
         <%= render :partial => "/shared/menu_branch",
                    :collection => roots,
