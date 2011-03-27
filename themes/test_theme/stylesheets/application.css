@@ -82,7 +82,7 @@ a.button {
 /* line 1, sass/_header.scss */
 #header {
   margin-bottom: 10px;
-  overflow: hidden;
+  position: relative;
   width: 100%;
 }
 /* line 6, sass/_header.scss */
@@ -96,45 +96,57 @@ a.button {
   color: #969696;
   float: right;
   font-size: 18px;
-  position: relative;
+  position: absolute;
+  right: 0;
   top: 40px;
-  width: 780px;
+  width: 753px;
 }
-/* line 21, sass/_header.scss */
-#header nav#menu ul li {
-  margin: 0;
-  padding: 0;
+/* line 23, sass/_header.scss */
+#header nav#menu > ul > li {
+  padding: 10px;
+  width: 98px;
 }
-/* line 24, sass/_header.scss */
-#header nav#menu ul li a {
+/* line 27, sass/_header.scss */
+#header nav#menu > ul > li a {
+  color: #969696;
   font-weight: normal;
-  padding: 5px 14px;
   text-decoration: none;
 }
-/* line 29, sass/_header.scss */
-#header nav#menu ul li a:link {
-  color: #969696;
-}
 /* line 32, sass/_header.scss */
-#header nav#menu ul li a:visited {
-  color: #969696;
-}
-/* line 35, sass/_header.scss */
-#header nav#menu ul li a:hover {
+#header nav#menu > ul > li a:hover {
   color: #000;
 }
-/* line 40, sass/_header.scss */
-#header nav#menu ul li:after {
-  content: "|";
+/* line 37, sass/_header.scss */
+#header nav#menu > ul > li.selected > a {
   color: #000;
-  font-size: 12px;
-  font-weight: bold;
-  position: relative;
-  top: -2px;
 }
-/* line 49, sass/_header.scss */
-#header nav#menu ul li:last-child:after {
-  content: "";
+/* line 41, sass/_header.scss */
+#header nav#menu > ul > li > ul {
+  display: none;
+  font-size: 14px;
+}
+/* line 45, sass/_header.scss */
+#header nav#menu > ul > li > ul li a {
+  display: block;
+  padding: 5px;
+}
+/* line 54, sass/_header.scss */
+#header nav#menu > ul > li:hover {
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+}
+/* line 59, sass/_header.scss */
+#header nav#menu > ul > li:hover > ul {
+  display: block;
 }
 
 /*

@@ -1,6 +1,6 @@
 #header {
   margin-bottom: 10px;
-  overflow: hidden;
+  position: relative;
   width: 100%;
   
   h1#logo {
@@ -13,42 +13,54 @@
     color: #969696;
     float: right;
     font-size: 18px;
-    position: relative;
+    position: absolute;
+    right: 0;
     top: 40px;
-    width: 780px;
+    width: 753px;
 
-    ul {
-      li {
-        margin: 0;
-        padding: 0;
+    & > ul {
+
+      & > li {
+        padding: 10px;
+        width: 98px;
+
         a {
+          color: #969696;
           font-weight: normal;
-          padding: 5px 14px;
           text-decoration: none;
 
-          &:link {
-            color: #969696;
-          }
-          &:visited {
-            color: #969696;
-          }
           &:hover {
             color: #000;
           }
         }
 
-        &:after {
-          content: "|";
-          color:#000;
-          font-size: 12px;
-          font-weight: bold;
-          position:relative;
-          top: -2px;
+        &.selected > a {
+          color: #000;
         }
 
-        &:last-child:after {
-          content: "";
+        & > ul {
+          display: none;
+          font-size: 14px;
+
+          & li a {
+            display: block;
+            padding: 5px;
+          }
         }
+      }
+    }
+
+    & > ul {
+      & > li:hover {
+        background: #fff;
+        @include border-radius();
+        @include box-shadow();
+
+        & > ul {
+          display: block;
+
+        }
+
       }
     }
   }
