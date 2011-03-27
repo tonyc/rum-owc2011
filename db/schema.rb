@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326234925) do
+ActiveRecord::Schema.define(:version => 20110327034601) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -86,6 +86,12 @@ ActiveRecord::Schema.define(:version => 20110326234925) do
     t.datetime "updated_at"
     t.string   "image_uid"
     t.string   "image_ext"
+  end
+
+  create_table "notes", :force => true do |t|
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "page_part_translations", :force => true do |t|
