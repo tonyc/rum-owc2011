@@ -124,13 +124,20 @@
     </div>
   </div>
   
-  <div class='field'>
-    <%= f.text_area :orgainized_fundraiser -%>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.select :status, @statuses,:prompt => "Select a Status" %>
   </div>
-  
-  <div class='field'>
-    <%= f.text_area :willing_participate -%>
-  </div>
+
+  <% unless @applicant.new_record? %>
+    <%= f.fields_for :notes do |builder| %>
+      <div class="field">
+        <%= builder.label "Notes" %><br />
+        <%= builder.text_area :comment %>
+
+      </div>
+    <%  end %>
+  <% end %>
   
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
