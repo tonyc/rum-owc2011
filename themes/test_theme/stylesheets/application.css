@@ -301,6 +301,31 @@
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
+/* line 99, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links {
+  float: right;
+  width: 500px;
+  text-align: right;
+}
+/* line 104, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li {
+  display: inline;
+}
+/* line 106, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li a {
+  color: #e9e8ea;
+  text-decoration: none;
+}
+/* line 110, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li a:after {
+  content: "|";
+  padding: 10px;
+}
+/* line 116, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li:last-child a:after {
+  content: "";
+  padding: 0;
+}
 
 /* line 8, sass/application.scss */
 #page {
