@@ -23,6 +23,7 @@ class ApplicantsController < ApplicationController
 
   def create
     @applicant = Applicant.new(params[:applicant])
+    @applicant.status = 'New Applicant'
     if @applicant.save
       flash[:success] = "Application Submitted"
       ApplicationMailer.application_notification(@applicant).deliver
@@ -32,6 +33,8 @@ class ApplicantsController < ApplicationController
       render 'new'
     end
   end
+
+  
 protected
 
   def find_all_applicants
