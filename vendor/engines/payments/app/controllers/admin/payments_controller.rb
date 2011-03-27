@@ -15,5 +15,9 @@ module Admin
       @payment = Payment.new
       @recipients = Recipient.isactive
     end
+
+    def contact_ajax
+      @contacts = Contact.where('last_name LIKE ? )', "#{params[:q]}%", false)
+    end
   end
 end
