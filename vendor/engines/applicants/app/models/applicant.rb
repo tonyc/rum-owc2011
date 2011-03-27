@@ -15,13 +15,15 @@ class Applicant < ActiveRecord::Base
 
   accepts_nested_attributes_for :notes
 
-  acts_as_indexed :fields => [:name, :phone, :address, :city, :state, :zip, :email, :race, :dob, :weight, :height, :education, :military_service, :occupation, :guardian, :guardian_address, :guardian_city, :guardian_state, :guardian_zip, :guardian_phone, :matching_funds, :orgainized_fundraiser, :willing_participate]
+  acts_as_indexed :fields => [:name, :phone, :address, :city, :state, :zip, :email, :race, :dob, :weight, :height, :education, :military_service, :occupation, :guardian, :guardian_address, :guardian_city, :guardian_state, :guardian_zip, :guardian_phone]
 
   validates :name, :presence => true, :uniqueness => true
 
   validates_format_of :email,
                       :with => /^[A-Z0-9._%-]+@([A-z0-9-]+\.)+[A-Z]{2,4}$/i,
                       :message => "must be a valid email address"
+
+  validates_acceptance_of :agree_terms, :message => "You must Agree to the Terms"
 
   def clean_notes
     for note in notes
