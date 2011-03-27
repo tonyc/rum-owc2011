@@ -64,3 +64,5 @@ gem 'refinerycms-recipients', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
 
 gem 'refinerycms-applicants', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-products', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-products', '1.0', :path => 'vendor/engines'

@@ -49,6 +49,7 @@ PATH
   specs:
     refinerycms-applicants (1.0)
     refinerycms-payments (1.0)
+    refinerycms-products (1.0)
     refinerycms-recipients (1.0)
 
 GEM
@@ -254,6 +255,7 @@ DEPENDENCIES
   refinerycms!
   refinerycms-applicants (= 1.0)!
   refinerycms-payments (= 1.0)!
+  refinerycms-products (= 1.0)!
   refinerycms-recipients (= 1.0)!
   refinerycms-theming (= 1.0.0)
   rspec (>= 2.5)
