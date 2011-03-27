@@ -1,7 +1,7 @@
 class Campaign < ActiveRecord::Base
 
-  scope :active, where(:active => true).order(:position)
-  scope :recent, order("id desc")
+  scope :active, :order => :position, :conditions => {:active => true}
+  scope :recent, :order => "id desc"
   
   acts_as_indexed :fields => [:name, :status]
 
