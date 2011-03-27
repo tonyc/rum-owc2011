@@ -1,6 +1,4 @@
-<% content_for :body_content_left do %>
-
- 
+<% content_for :body_content_left do %> 
   <% if @campaigns.present? %>
     <% @campaigns.each do |campaign| %>
       <%= campaign.name %>
@@ -12,7 +10,7 @@
       <% end %>
     <% end %>
   <% end %>
-
 <% end %>
+
 
 <%= render :partial => "/shared/content_page" %>

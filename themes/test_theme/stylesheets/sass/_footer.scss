@@ -49,7 +49,7 @@
       height: 52px;
       padding: 20px 0 0 30px;
       position: relative;
-      width: 364px;
+      width: 332px;
       @include border-radius();
 
       a {
@@ -78,7 +78,7 @@
         height: 77px;
         position: relative;
         top: -8px;
-        width: 214px;
+        width: 185px;
 
         span {
           display: block;
@@ -95,5 +95,29 @@
     font-size: 13px;
     padding: 10px 15px;
     @include border-radius();
+
+    ol.footer-links {
+      float: right;
+      width: 500px;
+      text-align: right;
+
+      li {
+        display: inline;
+        a {
+          color: #e9e8ea;
+          text-decoration: none;
+
+          &:after {
+            content: "|";
+            padding: 10px;
+          }
+
+        }
+        &:last-child a:after {
+          content: "";
+          padding: 0;
+        }
+      }
+    }
   }
 }

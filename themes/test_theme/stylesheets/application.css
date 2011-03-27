@@ -44,7 +44,18 @@
   width: 960px;
 }
 /* line 9, sass/_donate_runner.scss */
-.donate-runner .link-wrapper a {
+.donate-runner .link-wrapper .social-links {
+  float: right;
+}
+/* line 12, sass/_donate_runner.scss */
+.donate-runner .link-wrapper .social-links a {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 20, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a.donate {
   background: url(/images/donate-runner.png) 0 0 no-repeat;
   color: transparent;
   display: block;
@@ -54,27 +65,28 @@
   top: 2px;
   width: 158px;
 }
-/* line 19, sass/_donate_runner.scss */
-.donate-runner .link-wrapper a:hover {
+/* line 30, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a.donate:hover {
   background-position: -316px 0;
 }
-/* line 22, sass/_donate_runner.scss */
-.donate-runner .link-wrapper a:active {
+/* line 33, sass/_donate_runner.scss */
+.donate-runner .link-wrapper a.donate:active {
   background-position: -158px 0;
 }
 
 /* line 1, sass/_header.scss */
 #header {
+  margin-bottom: 10px;
   overflow: hidden;
   width: 100%;
 }
-/* line 5, sass/_header.scss */
+/* line 6, sass/_header.scss */
 #header h1#logo {
   float: left;
-  height: 178px;
-  width: 96px;
+  height: 96px;
+  width: 178px;
 }
-/* line 11, sass/_header.scss */
+/* line 12, sass/_header.scss */
 #header nav#menu {
   color: #969696;
   float: right;
@@ -82,30 +94,30 @@
   position: relative;
   top: 40px;
 }
-/* line 19, sass/_header.scss */
+/* line 20, sass/_header.scss */
 #header nav#menu ul li {
   margin: 0;
   padding: 0;
 }
-/* line 22, sass/_header.scss */
+/* line 23, sass/_header.scss */
 #header nav#menu ul li a {
   font-weight: normal;
-  padding: 5px 30px;
+  padding: 5px 26px;
   text-decoration: none;
 }
-/* line 27, sass/_header.scss */
+/* line 28, sass/_header.scss */
 #header nav#menu ul li a:link {
   color: #969696;
 }
-/* line 30, sass/_header.scss */
+/* line 31, sass/_header.scss */
 #header nav#menu ul li a:visited {
   color: #969696;
 }
-/* line 33, sass/_header.scss */
+/* line 34, sass/_header.scss */
 #header nav#menu ul li a:hover {
   color: #000;
 }
-/* line 38, sass/_header.scss */
+/* line 39, sass/_header.scss */
 #header nav#menu ul li:after {
   content: "|";
   color: #000;
@@ -114,7 +126,7 @@
   position: relative;
   top: -2px;
 }
-/* line 47, sass/_header.scss */
+/* line 48, sass/_header.scss */
 #header nav#menu ul li:last-child:after {
   content: "";
 }
@@ -123,13 +135,6 @@
 	Coin Slider jQuery plugin CSS styles
 	http://workshop.rs/projects/coin-slider
 */
-<<<<<<< HEAD
-/*
-	Coin Slider jQuery plugin CSS styles
-	http://workshop.rs/projects/coin-slider
-*/
-=======
->>>>>>> 7880076d356cafa39039bb1e2742b12bfb22b26b
 /* line 7, sass/_coin_slider.scss */
 .coin-slider {
   overflow: hidden;
@@ -240,7 +245,7 @@
   height: 52px;
   padding: 20px 0 0 30px;
   position: relative;
-  width: 364px;
+  width: 332px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
@@ -275,7 +280,7 @@
   height: 77px;
   position: relative;
   top: -8px;
-  width: 214px;
+  width: 185px;
 }
 /* line 83, sass/_footer.scss */
 #footer .footer-top .shop .detail span {
@@ -295,4 +300,34 @@
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
+}
+/* line 99, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links {
+  float: right;
+  width: 500px;
+  text-align: right;
+}
+/* line 104, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li {
+  display: inline;
+}
+/* line 106, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li a {
+  color: #e9e8ea;
+  text-decoration: none;
+}
+/* line 110, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li a:after {
+  content: "|";
+  padding: 10px;
+}
+/* line 116, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li:last-child a:after {
+  content: "";
+  padding: 0;
+}
+
+/* line 8, sass/application.scss */
+#page {
+  width: 960px;
 }

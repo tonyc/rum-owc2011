@@ -1,0 +1,21 @@
+<% content_for :body_content_left do %>
+  <ul id="products">
+    <% @products.each do |product| %>
+      <li>
+        <%= image_fu product.image, '360x240', :alt => product.name %>
+        <div class="name"><%= link_to product.name, product_url(product) %></div>
+        <div class="description"><%= raw product.description %></div>
+        <div class="price"><%= number_to_currency product.price %></div>
+        <div class="purchase">
+          <%- if product.purchased? -%>
+            Sorry, this item has been purchased.
+          <%- else -%>
+            <%= signed_amazon_simple_pay_button(product.price, product.description, "product-#{product.id}") %>
+          <%- end -%>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
