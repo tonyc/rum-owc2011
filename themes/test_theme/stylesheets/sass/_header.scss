@@ -1,0 +1,53 @@
+#header {
+  overflow: hidden;
+  width: 100%;
+  
+  h1#logo {
+    float: left;
+    height: 178px;
+    width: 96px;
+  }
+
+  nav#menu {
+    color: #969696;
+    float: right;
+    font-size: 18px;
+    position: relative;
+    top: 40px;
+
+    ul {
+      li {
+        margin: 0;
+        padding: 0;
+        a {
+          font-weight: normal;
+          padding: 5px 30px;
+          text-decoration: none;
+
+          &:link {
+            color: #969696;
+          }
+          &:visited {
+            color: #969696;
+          }
+          &:hover {
+            color: #000;
+          }
+        }
+
+        &:after {
+          content: "|";
+          color:#000;
+          font-size: 12px;
+          font-weight: bold;
+          position:relative;
+          top: -2px;
+        }
+
+        &:last-child:after {
+          content: "";
+        }
+      }
+    }
+  }
+}

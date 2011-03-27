@@ -1,6 +1,9 @@
 <h1 id='logo'>
-  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %>
+  <% link_to root_path do %>
+    <%= image_tag "logo.png", :height => "96", :width => "178", :alt => "Mobility for Independence" %>
+  <% end %>
 </h1>
+
 <%= render :partial => "/shared/menu",
            :locals => {
              :dom_id => 'menu',

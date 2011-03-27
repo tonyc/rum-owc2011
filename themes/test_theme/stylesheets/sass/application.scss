@@ -1,16 +1,3 @@
 @import 'compass';
-/*
-    Override default refinery application CSS below.
-    Formatting applies to all frontend.
-*/
-
-.sass_test {
-  div {
-    width:auto;
-    @include box-shadow();
-
-    a { 
-      text-decoration: none;
-    }
-  }
-}
+@import 'donate_runner';
+@import 'header';
