@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
     transaction_id = params[:transactionId]
     
     
-    if @product.update_attributes!(:purchased => true)
+    if @product.update_attributes!(:transaction_id => transaction_id, :purchased => true)
       redirect_to(@product, :notice => "Thank you for your purchase. Your transaction ID is: ##{transaction_id}")
     else
       redirect_to :action => :index
@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
 protected
 
   def find_all_products
-    @products = Product.published.order("purchased DESC, updated_at DESC")
+    @products = Product.published.order("purchased DESC, position")
   end
 
   def find_page

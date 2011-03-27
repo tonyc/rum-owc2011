@@ -3,13 +3,17 @@ module Admin
 
     crudify :product,
             :title_attribute => 'name'
-
+    
+    
     def index
       search_all_products if searching?
       paginate_all_products
-
+      
       render :partial => 'products' if request.xhr?
     end
-
+    
+    def new
+      @product = Product.new(:published => true)
+    end
   end
 end

@@ -165,12 +165,14 @@ ActiveRecord::Schema.define(:version => 20110327012918) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
+    t.string   "short_description"
     t.text     "description"
     t.string   "price"
     t.boolean  "purchased"
     t.boolean  "published"
-    t.integer  "position"
+    t.integer  "transaction_id"
     t.integer  "image_id"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

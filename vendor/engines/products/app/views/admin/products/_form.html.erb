@@ -4,9 +4,21 @@
           :include_object_name => true
         } %>
   
+  <%- if f.object.purchased? -%>
+    <div class='field'>
+      <%= f.label :transaction_id, "Transaction ID" -%>
+      <%= f.object.transaction_id  %>
+    </div>
+  <%- end -%>
+  
   <div class='field'>
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :short_description -%>
+    <%= f.text_field :short_description, :class => 'larger widest' -%>
   </div>
   
   <div class='field'>

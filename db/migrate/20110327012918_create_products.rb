@@ -3,12 +3,14 @@ class CreateProducts < ActiveRecord::Migration
   def self.up
     create_table :products do |t|
       t.string :name
+      t.string :short_description
       t.text :description
       t.string :price
       t.boolean :purchased
       t.boolean :published
-      t.integer :position
+      t.integer :transaction_id
       t.integer :image_id
+      t.integer :position
 
       t.timestamps
     end
