@@ -12,7 +12,7 @@ class Applicant < ActiveRecord::Base
   private
 
   def send_notifications
-    ApplicationMailer::application_notification(self)
-    ApplicationMailer::application_confirmation(self)
+    ApplicationMailer::application_notification(self).deliver
+    ApplicationMailer::application_confirmation(self).deliver
   end
 end
