@@ -95,5 +95,29 @@
     font-size: 13px;
     padding: 10px 15px;
     @include border-radius();
+
+    ol.footer-links {
+      float: right;
+      width: 500px;
+      text-align: right;
+
+      li {
+        display: inline;
+        a {
+          color: #e9e8ea;
+          text-decoration: none;
+
+          &:after {
+            content: "|";
+            padding: 10px;
+          }
+
+        }
+        &:last-child a:after {
+          content: "";
+          padding: 0;
+        }
+      }
+    }
   }
 }
