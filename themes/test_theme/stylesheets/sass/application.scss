@@ -4,13 +4,4 @@
     Formatting applies to all frontend.
 */
 
-.sass_test {
-  div {
-    width:auto;
-    @include box-shadow();
-
-    a { 
-      text-decoration: none;
-    }
-  }
-}
+@import 'coin_slider';
