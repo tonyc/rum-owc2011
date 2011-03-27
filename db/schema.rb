@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20110327080513) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "active"
+    t.integer  "applicant_id"
   end
 
   add_index "campaigns", ["id"], :name => "index_campaigns_on_id"
