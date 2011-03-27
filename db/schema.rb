@@ -11,7 +11,6 @@
 # It's strongly recommended to check this file into your version control system.
 
 ActiveRecord::Schema.define(:version => 20110327041057) do
-
   create_table "applicants", :force => true do |t|
     t.string   "name"
     t.string   "phone"
@@ -180,6 +179,20 @@ ActiveRecord::Schema.define(:version => 20110327041057) do
   end
 
   add_index "payments", ["id"], :name => "index_payments_on_id"
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.string   "short_description"
+    t.text     "description"
+    t.string   "price"
+    t.boolean  "purchased"
+    t.boolean  "published"
+    t.integer  "transaction_id"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"
