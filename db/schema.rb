@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327034601) do
+ActiveRecord::Schema.define(:version => 20110327040241) do
 
   create_table "applicants", :force => true do |t|
     t.string   "name"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20110327034601) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "status"
   end
 
   add_index "applicants", ["id"], :name => "index_applicants_on_id"
@@ -92,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20110327034601) do
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "applicant_id"
   end
 
   create_table "page_part_translations", :force => true do |t|
