@@ -61,6 +61,6 @@ gem 'aws-s3'
 # end
 
 gem 'refinerycms-payments', '1.0', :path => 'vendor/engines'
-
 gem 'refinerycms-applicants', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-campaigns', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-products', '1.0', :path => 'vendor/engines'
