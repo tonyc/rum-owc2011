@@ -1,4 +1,10 @@
-<%= image_tag "/images/rotator/key-to-independence.png" %>
+<ul id="rotator">
+  <li><%= image_tag "/images/rotator/key-to-independence.png",      :size => '960x328', :alt => "You're the key to indepedence. Come help us open some doors." %></li>
+  <li><%= image_tag "/images/rotator/3-million-banner.png",         :size => '960x328', :alt => "There are nearly 3 million wheelchair users in the United States." %></li>
+  <li><%= image_tag "/images/rotator/average-cost-banner.png",      :size => '960x328', :alt => "The average cost of a handicap accessible vehcile is $25,000 - $45,000." %></li>
+  <li><%= image_tag "/images/rotator/mobility-critical-banner.png", :size => '960x328', :alt => "Mobility is critical to an individual's self esteem and self-reliaance." %></li>
+</ul>
+
 
 <div class="tagline">
   <p>Mobility for Independence is committed to improving the lives of children and adults
@@ -26,3 +32,6 @@
       <%= link_to "More News", "#", :class=>"button" %>
   </div>
 </div>
+<%- content_for :javascripts do %>
+  <%= javascript_include_tag 'jquery.cycle.all.min', 'homepage_content_fader' %>
+<%- end -%>
