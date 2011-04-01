@@ -100,38 +100,39 @@ a.button {
   right: 0;
   top: 40px;
   width: 753px;
+  z-index: 1000;
 }
-/* line 23, sass/_header.scss */
+/* line 24, sass/_header.scss */
 #header nav#menu > ul > li {
   padding: 10px;
   width: 98px;
 }
-/* line 27, sass/_header.scss */
+/* line 28, sass/_header.scss */
 #header nav#menu > ul > li a {
   color: #969696;
   font-weight: normal;
   text-decoration: none;
 }
-/* line 32, sass/_header.scss */
+/* line 33, sass/_header.scss */
 #header nav#menu > ul > li a:hover {
   color: #000;
 }
-/* line 37, sass/_header.scss */
+/* line 38, sass/_header.scss */
 #header nav#menu > ul > li.selected > a {
   color: #000;
 }
-/* line 41, sass/_header.scss */
+/* line 42, sass/_header.scss */
 #header nav#menu > ul > li > ul {
   display: none;
   font-size: 14px;
   z-index: 1000;
 }
-/* line 46, sass/_header.scss */
+/* line 47, sass/_header.scss */
 #header nav#menu > ul > li > ul li a {
   display: block;
   padding: 5px;
 }
-/* line 55, sass/_header.scss */
+/* line 56, sass/_header.scss */
 #header nav#menu > ul > li:hover {
   background: #fff;
   -moz-border-radius: 5px;
@@ -145,7 +146,7 @@ a.button {
   -o-box-shadow: #333333 1px 1px 5px 0;
   box-shadow: #333333 1px 1px 5px 0;
 }
-/* line 60, sass/_header.scss */
+/* line 61, sass/_header.scss */
 #header nav#menu > ul > li:hover > ul {
   display: block;
 }
