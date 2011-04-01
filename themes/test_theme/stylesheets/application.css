@@ -124,13 +124,14 @@ a.button {
 #header nav#menu > ul > li > ul {
   display: none;
   font-size: 14px;
+  z-index: 1000;
 }
-/* line 45, sass/_header.scss */
+/* line 46, sass/_header.scss */
 #header nav#menu > ul > li > ul li a {
   display: block;
   padding: 5px;
 }
-/* line 54, sass/_header.scss */
+/* line 55, sass/_header.scss */
 #header nav#menu > ul > li:hover {
   background: #fff;
   -moz-border-radius: 5px;
@@ -144,69 +145,12 @@ a.button {
   -o-box-shadow: #333333 1px 1px 5px 0;
   box-shadow: #333333 1px 1px 5px 0;
 }
-/* line 59, sass/_header.scss */
+/* line 60, sass/_header.scss */
 #header nav#menu > ul > li:hover > ul {
   display: block;
 }
 
-/*
-	Coin Slider jQuery plugin CSS styles
-	http://workshop.rs/projects/coin-slider
-*/
-/* line 7, sass/_coin_slider.scss */
-.coin-slider {
-  overflow: hidden;
-  zoom: 1;
-  position: relative;
-}
-
-/* line 8, sass/_coin_slider.scss */
-.coin-slider a {
-  text-decoration: none;
-  outline: none;
-  border: none;
-}
-
-/* line 10, sass/_coin_slider.scss */
-.cs-buttons {
-  font-size: 0px;
-  padding: 10px;
-  float: left;
-}
-
-/* line 11, sass/_coin_slider.scss */
-.cs-buttons a {
-  margin-left: 5px;
-  height: 10px;
-  width: 10px;
-  float: left;
-  border: 1px solid #B8C4CF;
-  color: #B8C4CF;
-  text-indent: -1000px;
-}
-
-/* line 12, sass/_coin_slider.scss */
-.cs-active {
-  background-color: #B8C4CF;
-  color: #FFFFFF;
-}
-
-/* line 14, sass/_coin_slider.scss */
-.cs-title {
-  width: 545px;
-  padding: 10px;
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-/* line 17, sass/_coin_slider.scss */
-.cs-prev,
-.cs-next {
-  background-color: #000000;
-  color: #FFFFFF;
-  padding: 0px 10px;
-}
-
+/*@import 'coin_slider';*/
 /* line 1, sass/_interior.scss */
 h1#body_content_title {
   display: block;
