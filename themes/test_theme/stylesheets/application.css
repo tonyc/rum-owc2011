@@ -358,15 +358,13 @@ h1#body_content_title {
   color: #e9e8ea;
   text-decoration: none;
 }
-/* line 112, sass/_footer.scss */
-#footer .footer-bottom ol.footer-links li a:after {
-  content: "|";
-  padding: 10px;
+/* line 113, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li span {
+  margin: 0 5px;
 }
-/* line 118, sass/_footer.scss */
-#footer .footer-bottom ol.footer-links li:last-child a:after {
-  content: "";
-  padding: 0;
+/* line 119, sass/_footer.scss */
+#footer .footer-bottom ol.footer-links li:last-child span {
+  display: none;
 }
 
 /* line 1, sass/_campaigns.scss */
