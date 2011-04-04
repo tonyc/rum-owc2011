@@ -92,48 +92,55 @@ a.button {
   width: 178px;
 }
 /* line 12, sass/_header.scss */
-#header nav#menu {
+#header nav.menu {
   color: #969696;
   float: right;
   font-size: 18px;
   position: absolute;
   right: 0;
   top: 40px;
-  width: 753px;
+  width: 760px;
   z-index: 1000;
 }
 /* line 24, sass/_header.scss */
-#header nav#menu > ul > li {
-  padding: 10px;
-  width: 98px;
+#header nav.menu > ul > li {
+  display: block;
+  margin: 0;
+  padding-bottom: 5px;
+  width: 126px;
 }
-/* line 28, sass/_header.scss */
-#header nav#menu > ul > li a {
+/* line 30, sass/_header.scss */
+#header nav.menu > ul > li a {
   color: #969696;
+  display: block;
   font-weight: normal;
   text-decoration: none;
+  padding: 10px 10px 5px 10px;
 }
-/* line 33, sass/_header.scss */
-#header nav#menu > ul > li a:hover {
-  color: #000;
-}
-/* line 38, sass/_header.scss */
-#header nav#menu > ul > li.selected > a {
+/* line 37, sass/_header.scss */
+#header nav.menu > ul > li a:hover {
   color: #000;
 }
 /* line 42, sass/_header.scss */
-#header nav#menu > ul > li > ul {
+#header nav.menu > ul > li.selected > a {
+  color: #000;
+}
+/* line 46, sass/_header.scss */
+#header nav.menu > ul > li > ul {
   display: none;
-  font-size: 14px;
+  font-size: 12px;
   z-index: 1000;
 }
-/* line 47, sass/_header.scss */
-#header nav#menu > ul > li > ul li a {
+/* line 51, sass/_header.scss */
+#header nav.menu > ul > li > ul li a {
+  border-top: 1px solid #ccc;
   display: block;
-  padding: 5px;
+  margin: 0 10px;
+  padding: 7px 0;
+  width: 106px;
 }
-/* line 56, sass/_header.scss */
-#header nav#menu > ul > li:hover {
+/* line 63, sass/_header.scss */
+#header nav.menu > ul > li:hover {
   background: #fff;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -146,8 +153,8 @@ a.button {
   -o-box-shadow: #333333 1px 1px 5px 0;
   box-shadow: #333333 1px 1px 5px 0;
 }
-/* line 61, sass/_header.scss */
-#header nav#menu > ul > li:hover > ul {
+/* line 68, sass/_header.scss */
+#header nav.menu > ul > li:hover > ul {
   display: block;
 }
 
