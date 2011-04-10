@@ -16,13 +16,14 @@
       
       form {
         overflow: hidden;
-
+        
         label {
-          display: block;
           float: left;
+          display: block;
           font-size: 20px;
           font-weight: normal;
           margin-right: 10px;
+          margin-bottom: 8px;
           position: relative;
           top: 5px;
         }
