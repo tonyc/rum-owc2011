@@ -1,12 +1,5 @@
 <div class="footer-top">
-  <div class="newsletter">
-    <form action="#">
-      <label for="newsletter-signup">Newsletter Signup</label>
-      <input type="text" name="newsletter-signup" />
-      <input class="button" type="submit" value="Signup" />
-    </form>
-
-  </div>
+  <%= render :partial => 'shared/newsletter' %>
   <div class="shop">
     <%= link_to "Shop", products_url %>
     <div class="detail">
