@@ -109,16 +109,16 @@
         a {
           color: #e9e8ea;
           text-decoration: none;
-
-          &:after {
-            content: "|";
-            padding: 10px;
-          }
-
         }
-        &:last-child a:after {
-          content: "";
-          padding: 0;
+
+        span {
+          margin: 0 5px;
+        }
+      }
+
+      li:last-child {
+        span {
+          display: none;
         }
       }
     }

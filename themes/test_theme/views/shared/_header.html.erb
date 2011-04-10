@@ -3,58 +3,11 @@
     <%= image_tag "logo.png", :height => "96", :width => "178", :alt => "Mobility for Independence" %>
   <% end %>
 </h1>
-
-
-<nav id="menu" class="menu">
-  <ul>
-    <li class="first" id="item_0"><a href="/about-us">About Us</a>
-     <ul>
-        <li><a href="/about-us">Link Title 1</a></li>
-        <li><a href="/events">Link Title 2</a></li>
-        <li><a href="/giving">Link Title 3</a></li>
-        <li><a href="/families">Link Title 4</a></li>
-      </ul>
-    </li>
-    <li id="item_1"><a href="/events">Events</a>
-       <ul>
-        <li><a href="/about-us">Link Title 1</a></li>
-        <li><a href="/events">Link Title 2</a></li>
-        <li><a href="/giving">Link Title 3</a></li>
-        <li><a href="/families">Link Title 4</a></li>
-      </ul>
-    </li>
-    <li id="item_3"><a href="/giving">Giving</a>
-     <ul>
-        <li><a href="/about-us">Link Title 1</a></li>
-        <li><a href="/events">Link Title 2</a></li>
-        <li><a href="/giving">Link Title 3</a></li>
-        <li><a href="/families">Link Title 4</a></li>
-      </ul>
-    </li>
-    <li id="item_5"><a href="/families">Families</a>
-      <ul>
-        <li><a href="/about-us">Link Title 1</a></li>
-        <li><a href="/events">Link Title 2</a></li>
-        <li><a href="/giving">Link Title 3</a></li>
-        <li><a href="/families">Link Title 4</a></li>
-      </ul>
-    </li>
-    <li class="selected last" id="item_6"><a href="/newsroom">Newsroom</a>
-      <ul>
-        <li><a href="/about-us">Link Title 1</a></li>
-        <li><a href="/events">Link Title 2</a></li>
-        <li><a href="/giving">Link Title 3</a></li>
-        <li><a href="/families">Link Title 4</a></li>
-      </ul>
-    </li>
-    <li id="item_2" class="hover"><a href="/contact-us">Contact Us</a></li>
-  </ul>
-</nav>
-
-<%# <%= render :partial => "/shared/menu",
-<%#            :locals => {
-<%#              :dom_id => 'menu',
-<%#              :css => 'menu'
-<%#            } -%>
+<%= render :partial => "/shared/menu",
+           :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           } -%>
 
 <br style="clear: both;" />
+

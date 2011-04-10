@@ -4,11 +4,15 @@ module ApplicationHelper
     active ? "active" : "inactive"
   end
   
+  def pages_for_header
+    @menu_pages.includes(:slugs).reject { |p| p.title == "Home"}
+  end
+  
   def top_level_pages
     @menu_pages.includes(:slugs).select { |p| p.parent_id.nil? }
   end
   
-  def top_level_pages_without_home
+  def pages_for_footer
     top_level_pages.reject { |p| p.title == "Home"}
   end
   
