@@ -7,7 +7,7 @@ gem 'rails', '3.0.5'
 
 gem "nokogiri", '~>1.4.0'
 gem 'heroku'
-gem 'taps', '>= 0.3.20'
+gem 'taps', '>= 0.3.22'
 
 group :test do
   gem 'database_cleaner'
