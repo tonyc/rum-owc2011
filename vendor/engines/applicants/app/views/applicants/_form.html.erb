@@ -1,3 +1,67 @@
+<% content_for :javascripts do %>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end %>
+
+
+<% semantic_form_for [@applicant] do |form| %>
+
+  <%= render :partial => "/shared/error_messages", :locals => {
+            :object => @applicant,
+            :include_object_name => true
+          } %>
+
+  <% form.inputs do %>
+    <%= form.input :name %>
+    <%= form.input :phone, :as => :phone %>
+    <%= form.input :address %>
+    <%= form.input :city %>
+    <%= form.input :state %>
+    <%= form.input :zip %>
+    <%= form.input :email, :as => :email %>
+    <%= form.input :race %>
+    <%= form.input :dob, :label => "Date of Birth", :as => :date %>
+    <%= form.input :weight %>
+    <%= form.input :height %>
+    <%= form.input :occupation %>
+    <%= form.input :guardian %>
+    <%= form.input :guardian_address %>
+    <%= form.input :guardian_city %>
+    <%= form.input :guardian_state %>
+    <%= form.input :guardian_zip %>
+    <%= form.input :guardian_phone, :as => :phone %>
+    <%= form.input :willing_participate, :label => "Willing to Participate", :as => :radio %>
+
+    <li>
+      <p>Please be aware that we will need to collect the following information also:</p>
+      <ul>
+        <li>Statement from physician outlining your disability and a recommendation for approval of grant.</li>
+        <li>Statement from one other source such as social worker, therapist, pastor, personal attendant describing your situation and recommendation for approval of grant.</li>
+        <li>Copy of last year’s income tax return along with the Income and Expense Summary (see page four) of this application.</li>
+      </ul>
+    </li>
+    <li>
+      <p>We would like to include your name and information in our database in order to submit and secure grants and funding from both public and private foundations, future fundraising efforts, donation solicitations and other types of publications and marketing materials used by Mobility for Independence.</p>
+      <p>In addition, if you have a current photo of the applicant, we would appreciate an attachment of such photo to this application.  We would like the ability to reproduce that image in any future grant applications, website updates, publications, marketing materials, etc.</p>
+
+      <p>INFORMATION AND PHOTOGRAPHIC/MODEL PROPERTY RELEASE</p>
+      <p>I hereby grant Mobility for Independence permission to use the information in this application as well as any attached photographs taken of myself for any legitimate uses they deem proper.  Further, I relinquish and grant Mobility for Independence all right, title and interest in the transparencies, negatives, photographic prints and/or reproductions that  I have attached to this application.</p>
+    </li>
+
+    <%= form.input :agree_terms, :as => :radio %>
+
+  <% end %>
+
+  <% form.buttons do %>
+    <%= form.commit_button "Submit Application" %>
+    <%= link_to "Cancel", root_path %>
+  <% end %>
+<% end %>
+
+<!--
 <%= form_for [ @applicant] do |f| -%>
   <%= render :partial => "/shared/error_messages", :locals => {
           :object => @applicant,
@@ -155,10 +219,4 @@
 
   <%= f.submit "Submit Application" %> <%= link_to "Cancel", root_path %>
 <% end -%>
-<% content_for :javascripts do %>
-  <script>
-    $(document).ready(function(){
-      page_options.init(false, '', '');
-    });
-  </script>
-<% end %>
+-->
